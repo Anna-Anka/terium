@@ -1,0 +1,21 @@
+/* stylelint-disable */
+
+@mixin font-face($font-family, $url, $weight) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url('../fonts/#{$url}.woff2') format("woff2"),
+        url('../fonts/#{$url}.woff') format("woff");
+        font-weight: #{$weight};
+        font-display: swap;
+        font-style: normal;
+    }
+}
+
+//Rubik
+@include font-face(Rubik, Rubik-Light, 300);
+@include font-face(Rubik, Rubik-Regular, 400);
+@include font-face(Rubik, Rubik-SemiBold, 600);
+@include font-face(Rubik, Rubik-Bold, 700);
+
+//UniSansDemo-HeavyCAPS
+@include font-face(Uni-Sans, UniSansDemo-HeavyCAPS, 700);
