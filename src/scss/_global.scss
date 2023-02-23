@@ -2,7 +2,7 @@ body {
 	color: $black;
 	font-weight: $fw-300;
 	font-size: 16px;
-	font-family: $uniSans, Arial, sans-serif;
+	font-family: $rubik, Arial, sans-serif;
 	line-height: 1.6;
 	background-color: $white;
 }
@@ -101,6 +101,8 @@ body {
 .logo {
 	display: inline-block;
 	width: 100%;
+    @include adaptiv-value('max-width', 233, 120, 1);
+    @include adaptiv-value('height', 48, 25, 1);
 
 	&__img {
 		width: 100%;
