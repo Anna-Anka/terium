@@ -1,10 +1,9 @@
 /* stylelint-disable */
 
 $breakpoints: (
-    "sm": 560px,
+    "sm": 580px,
     "md": 768px,
-    "lg": 992px,
-    "xl": 1200px);
+    "lg": 992px);
 
 @mixin mq($width, $type: max) {
     @if map_has_key($breakpoints, $width) {

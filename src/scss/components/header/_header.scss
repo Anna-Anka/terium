@@ -1,0 +1,44 @@
+.header {
+	padding: 27px 0;
+	color: $white;
+	font-size: 18px;
+	line-height: 1.2;
+	background-color: $dark-800;
+
+	@include mq(lg) {
+		padding: 20px 0;
+	}
+
+	&__navigation {
+		@include flex-center-sb;
+	}
+
+	&__logo {
+		margin-right: 20px;
+	}
+
+	&__buy {
+		font-size: 18px;
+
+		@include mq(lg) {
+			margin-right: 24px;
+			margin-left: auto;
+			padding: 12px 28px;
+			font-size: 14px;
+		}
+	}
+}
+
+.burger {
+	@include burger;
+	display: none;
+
+	&--active {
+		z-index: 20;
+	}
+
+	@include mq(lg) {
+		display: flex;
+	}
+}
+
