@@ -1,0 +1,139 @@
+.consultation {
+	&__container {
+		@include mq(lg) {
+			padding: 0;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		padding: 70px 80px 83px;
+		color: $white;
+		@include adaptiv-value('font-size', 20, 16, 1);
+		background-color: $dark-800;
+
+		@include mq(lg) {
+			padding: 60px 20px;
+		}
+
+		@include mq(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 600px;
+		margin-right: 45px;
+
+		@include mq(md) {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 42px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		color: $white;
+	}
+
+	&__subtext {
+		display: block;
+		@include adaptiv-value('margin-bottom', 40, 30, 1);
+	}
+
+	&__form {
+		width: 100%;
+		max-width: 530px;
+
+		@include mq(md) {
+			max-width: 100%;
+		}
+	}
+
+	&__item {
+		margin-bottom: 10px;
+	}
+
+	&__field {
+		width: 100%;
+		padding: 14px 25px;
+		background-color: rgba($white, 0.08);
+
+		&::placeholder {
+			color: rgba($white, 0.5);
+		}
+	}
+
+	&__button {
+		width: 100%;
+		margin-bottom: 15px;
+		background-color: $blue-400;
+	}
+
+	&__agree {
+		max-width: 427px;
+		margin: 0 auto;
+		font-size: 12px;
+		text-align: center;
+
+		@include mq(md) {
+			max-width: 100%;
+		}
+	}
+
+	&__link {
+		font-weight: $fw-600;
+	}
+
+	&__caption {
+		width: 100%;
+		max-width: 555px;
+
+		@include mq(md) {
+			max-width: 100%;
+		}
+	}
+
+	&__person {
+		display: flex;
+		align-items: center;
+		@include adaptiv-value('margin-bottom', 25, 20, 1);
+	}
+
+	&__picture {
+		position: relative;
+		@include adaptiv-value('margin-right', 28, 20, 1);
+
+		&::before {
+			position: absolute;
+			top: 0;
+			right: -10px;
+			width: 10px;
+			height: 10px;
+			background-color: $blue-400;
+			border-radius: 50%;
+			content: '';
+		}
+	}
+
+	&__img {
+		@include adaptiv-value('width', 91, 60, 1);
+		@include adaptiv-value('height', 91, 60, 1);
+		@include adaptiv-value('flex-basis', 91, 60, 1);
+		object-fit: cover;
+		border-radius: 50%;
+	}
+
+	&__name {
+		display: block;
+		font-family: $uniSans;
+		text-transform: uppercase;
+	}
+
+	&__expert {
+		font-size: 16px;
+		opacity: 0.5;
+	}
+}
