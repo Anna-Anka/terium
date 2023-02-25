@@ -1,4 +1,7 @@
 .consultation {
+	position: relative;
+	z-index: 5;
+
 	&__container {
 		@include mq(lg) {
 			padding: 0;
@@ -9,8 +12,8 @@
 		display: flex;
 		padding: 70px 80px 83px;
 		color: $white;
-		@include adaptiv-value('font-size', 20, 16, 1);
 		background-color: $dark-800;
+		@include adaptiv-value('font-size', 20, 16, 1);
 
 		@include mq(lg) {
 			padding: 60px 20px;

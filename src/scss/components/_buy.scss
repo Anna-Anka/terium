@@ -39,10 +39,6 @@
 		}
 	}
 
-	&__title {
-		margin-bottom: 10px;
-	}
-
 	&__subtext {
 		@include adaptiv-value('margin-bottom', 60, 30, 1);
 		@include adaptiv-value('font-size', 20, 16, 1);
