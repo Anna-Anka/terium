@@ -1,0 +1,118 @@
+.buy {
+	background-color: $grey-200;
+
+	&__container {
+		@include mq(lg) {
+			padding-right: 0;
+		}
+
+		@include mq(md) {
+			padding-left: 0;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		@include mq(lg) {
+			flex-direction: column;
+		}
+	}
+
+	&__content {
+		width: 49%;
+		margin-right: 20px;
+		@include adaptiv-value('padding-top', 130, 60, 1);
+		@include adaptiv-value('padding-bottom', 130, 60, 1);
+
+		@include mq(lg) {
+			width: 100%;
+			margin-right: 0;
+		}
+
+		@include mq(md) {
+			margin-bottom: 32px;
+			padding-right: 15px;
+			padding-bottom: 0;
+			padding-left: 15px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__subtext {
+		@include adaptiv-value('margin-bottom', 60, 30, 1);
+		@include adaptiv-value('font-size', 20, 16, 1);
+
+        @include mq(lg) {
+            margin-bottom: 16px;
+        }
+	}
+
+	&__count {
+		display: flex;
+		@include adaptiv-value('margin-bottom', 25, 20, 1);
+		font-weight: $fw-700;
+		font-family: $uniSans;
+
+        @include mq(lg) {
+            margin-bottom: 16px;
+        }
+	}
+
+	&__price {
+		margin-right: 10px;
+		@include adaptiv-value('font-size', 38, 24, 1);
+	}
+
+	&__old {
+		color: $grey-600;
+		text-decoration: line-through;
+		@include adaptiv-value('font-size', 24, 18, 1);
+	}
+
+	&__buttons {
+		display: flex;
+	}
+
+	&__button {
+		@include adaptiv-value('font-size', 20, 16, 1);
+		@include adaptiv-value('padding-top', 22, 14, 1);
+		@include adaptiv-value('padding-bottom', 22, 14, 1);
+		@include adaptiv-value('padding-left', 90, 36, 1);
+		@include adaptiv-value('padding-right', 90, 36, 1);
+
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__images {
+		width: 49%;
+		@include flex-all-center;
+		background-color: $dark-800;
+
+		@include mq(lg) {
+			width: 100%;
+		}
+
+        @include mq(md) {
+            height: 320px;
+        }
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 550px;
+		height: 645px;
+		object-fit: contain;
+
+        @include mq(md) {
+           max-width: 100%;
+           height: 300px;
+        }
+	}
+}
