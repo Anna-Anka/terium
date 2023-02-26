@@ -147,4 +147,8 @@ body {
 	&__accent {
 		color: $blue-600;
 	}
+
+    &__nonaccent {
+        color: $grey-600;
+    }
 }

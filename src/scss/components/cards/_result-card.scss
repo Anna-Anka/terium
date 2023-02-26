@@ -1,0 +1,50 @@
+.result-card {
+	display: flex;
+	height: 100%;
+	line-height: 1.4;
+	background-color: $grey-200;
+	@include adaptiv-value('padding-top', 25, 18, 1);
+	@include adaptiv-value('padding-bottom', 25, 18, 1);
+	@include adaptiv-value('padding-left', 40, 25, 1);
+	@include adaptiv-value('padding-right', 40, 25, 1);
+
+	&__icon {
+		@include bg-conatin;
+		@include adaptiv-value('height', 52, 34, 1);
+		@include adaptiv-value('width', 52, 34, 1);
+		@include adaptiv-value('min-width', 52, 34, 1);
+		@include adaptiv-value('margin-right', 28, 15, 1);
+	}
+
+	&__title {
+		font-weight: $fw-300;
+		@include adaptiv-value('font-size', 20, 18, 1);
+		@include adaptiv-value('margin-bottom', 14, 10, 1);
+	}
+
+	&__controll {
+		font-weight: $fw-700;
+		font-size: 14px;
+		font-family: $uniSans;
+
+		&--hidden {
+			display: none;
+		}
+
+		&--open {
+			color: $blue-600;
+		}
+
+		&:not(:last-child) {
+			@include adaptiv-value('margin-bottom', 15, 10, 1);
+		}
+	}
+
+	&__text {
+		@include adaptiv-value('font-size', 16, 14, 1);
+
+		&--hidden {
+			display: none;
+		}
+	}
+}
