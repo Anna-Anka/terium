@@ -43,6 +43,12 @@
 	&__text {
 		@include adaptiv-value('font-size', 16, 14, 1);
 
+        p {
+            &:not(:last-child) {
+               margin-bottom: 4px;
+            }
+        }
+
 		&--hidden {
 			display: none;
 		}

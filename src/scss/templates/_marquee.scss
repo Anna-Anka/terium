@@ -1,6 +1,7 @@
 .marquee {
-    padding: 20px 0;
-	background-color: $white;
+    @include adaptiv-value('padding-top', 26, 15, 1);
+    @include adaptiv-value('padding-bottom', 26, 15, 1);
+	background-color: $dark-800;
 
 	&__wrapper {
 		position: relative;
@@ -14,7 +15,13 @@
 
 	&__item {
 		flex-shrink: 0;
-		padding: 0 80px;
+		color: $white;
+		font-weight: $fw-600;
+		line-height: 1.4;
 		white-space: nowrap;
+        text-transform: uppercase;
+        @include adaptiv-value('font-size', 20, 16, 1);
+        @include adaptiv-value('padding-left', 25, 15, 1);
+        @include adaptiv-value('padding-right', 25, 15, 1);
 	}
 }

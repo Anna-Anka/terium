@@ -1,7 +1,7 @@
 export const handleMarquee = () => {
     if (document.querySelector('.marquee')) {
         const marquee = document.querySelectorAll('.marquee');
-        let speed = 2;
+        let speed = 1;
         marquee.forEach(function (el) {
             const container = el.querySelector('.marquee__wrapper');
             const content = el.querySelector('.marquee__wrapper > *');
