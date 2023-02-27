@@ -28,5 +28,9 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
 		gap: 12px;
+
+        @include mq(md) {
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        }
 	}
 }

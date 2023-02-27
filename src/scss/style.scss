@@ -18,6 +18,7 @@
 
 // * cards 
 @import './components/cards/result-card';
+@import './components/cards/review-card';
 
 // * header
 @import './components/header/header';
@@ -32,3 +33,4 @@
 // * home-page
 @import './home-page/hero';
 @import './home-page/result';
+@import './home-page/reviews';

@@ -1,7 +1,7 @@
 .consultation {
 	position: relative;
 	z-index: 5;
-
+    
 	&__container {
 		@include mq(lg) {
 			padding: 0;

@@ -1,0 +1,39 @@
+<section class="reviews section">
+    <div class="reviews__container container">
+        <h2 class="reviews__title title">
+            Что <span class="title__accent">говорят о нас</span> наши клиенты
+        </h2>
+        <div class="reviews__wrapper">
+            <div class="reviews__swiper swiper">
+                <ul class="reviews__items swiper-wrapper">
+                    <li class="reviews__item swiper-slide">
+                        @include('./../components/cards/_review-card.html', {
+                        'title' : 'Виктор',
+                        'text' : '<p>Восстанавливает их поверхность, устраняет люфт. Тем самым увеличивается ресурс турбины.</p>'
+                        })
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                        @include('./../components/cards/_review-card.html', {
+                        'title' : 'Борис',
+                        'text' : '<p>Подшипники турбины смазываются моторным маслом, поступающим из общей системы. Вместе с ним в турбину поступает состав ТериумПро№1. Он формирует защитный слой в местах износа подшипников. Восстанавливает их поверхность, устраняет люфт. Тем самым увеличивается ресурс турбины.</p>'
+                        })
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                        @include('./../components/cards/_review-card.html', {
+                        'title' : 'Виктор',
+                        'text' : '<p>Подшипники турбины смазываются моторным маслом, поступающим из общей системы. Вместе с ним в турбину поступает состав ТериумПро№1. Он формирует защитный слой в местах износа подшипников. Восстанавливает их поверхность, устраняет люфт. Тем самым увеличивается ресурс турбины.</p>'
+                        })
+                    </li>
+                    <li class="reviews__item swiper-slide">
+                        @include('./../components/cards/_review-card.html', {
+                        'title' : 'Борис',
+                        'text' : '<p>Подшипники турбины смазываются моторным маслом, поступающим из общей системы. Вместе с ним в турбину поступает состав ТериумПро№1.</p>'
+                        })
+                    </li>
+                </ul>
+                <div class="reviews__pagination swiper-pagination"></div>
+            </div>
+        </div>
+        <a class="reviews__more button button--border" href="#">все отзывы</a>
+    </div>
+</section>
