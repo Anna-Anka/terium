@@ -18,7 +18,7 @@
 		justify-content: space-between;
 
 		@include mq(lg) {
-			flex-direction: column;
+			flex-direction: column-reverse;
 		}
 
 		&::before {
@@ -50,19 +50,19 @@
 		@include mq(lg) {
 			width: 100%;
 			margin-right: 0;
+			padding-top: 20px;
+			padding-bottom: 40px;
 		}
 
 		@include mq(md) {
-			margin-bottom: 32px;
 			padding-right: 15px;
-			padding-bottom: 0;
 			padding-left: 15px;
 		}
 	}
 
 	&__subtext {
-		@include adaptiv-value('margin-bottom', 60, 30, 1);
-		@include adaptiv-value('font-size', 20, 16, 1);
+		@include adaptiv-value('margin-bottom', 60, 15, 1);
+		@include adaptiv-value('font-size', 20, 14, 1);
 
 		@include mq(lg) {
 			margin-bottom: 16px;
@@ -73,7 +73,7 @@
 		display: flex;
 		font-weight: $fw-700;
 		font-family: $uniSans;
-		@include adaptiv-value('margin-bottom', 25, 20, 1);
+		@include adaptiv-value('margin-bottom', 25, 10, 1);
 
 		@include mq(lg) {
 			margin-bottom: 16px;
@@ -82,28 +82,33 @@
 
 	&__price {
 		margin-right: 10px;
-		@include adaptiv-value('font-size', 38, 24, 1);
+		@include adaptiv-value('font-size', 38, 22, 1);
 	}
 
 	&__old {
 		color: $grey-600;
 		text-decoration: line-through;
-		@include adaptiv-value('font-size', 24, 18, 1);
+		@include adaptiv-value('font-size', 24, 16, 1);
 	}
 
 	&__buttons {
 		display: flex;
+
+		@include mq(sm) {
+			flex-direction: column;
+		}
 	}
 
 	&__button {
-		@include adaptiv-value('font-size', 20, 16, 1);
-		@include adaptiv-value('padding-top', 22, 14, 1);
-		@include adaptiv-value('padding-bottom', 22, 14, 1);
-		@include adaptiv-value('padding-left', 90, 36, 1);
-		@include adaptiv-value('padding-right', 90, 36, 1);
+		padding: 18px 85px;
 
 		&:not(:last-child) {
 			margin-right: 10px;
+
+			@include mq(sm) {
+				margin-right: 0;
+                margin-bottom: 5px;
+			}
 		}
 	}
 

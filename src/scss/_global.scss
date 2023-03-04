@@ -9,9 +9,9 @@ body {
 
 .container {
 	width: 100%;
-	max-width: 1390px;
+	max-width: 1400px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 20px;
 }
 
 .wrapper {
@@ -35,12 +35,13 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 14px 36px;
+	padding: 16px 36px;
 	color: $white;
 	font-weight: $fw-700;
 	font-size: 20px;
 	font-family: $uniSans;
 	text-transform: uppercase;
+    @include adaptiv-value('font-size', 20, 16, 1);
 
 	&::before {
 		position: absolute;
@@ -55,9 +56,6 @@ body {
 	}
 
 	&--normal {
-		font-weight: $fw-300;
-		font-family: $rubik;
-		text-transform: none;
 		background-color: $blue-600;
 
 		&::before {
@@ -132,14 +130,14 @@ body {
 }
 
 .section {
-	@include adaptiv-value('padding-top', 120, 70, 1);
-	@include adaptiv-value('padding-bottom', 120, 70, 1);
+	@include adaptiv-value('padding-top', 120, 40, 1);
+	@include adaptiv-value('padding-bottom', 120, 40, 1);
 }
 
 .title {
 	margin-bottom: 10px;
 	font-weight: $fw-700;
-    @include adaptiv-value('font-size', 38, 30, 1);
+    @include adaptiv-value('font-size', 38, 18, 1);
 	font-family: $uniSans;
 	line-height: 1.4;
     text-transform: uppercase;
