@@ -1,0 +1,22 @@
+.breadcrumbs {
+	@include adaptiv-value('padding-top', 80, 25, 1);
+	@include adaptiv-value('padding-bottom', 25, 20, 1);
+
+	&__items {
+		display: flex;
+		align-items: center;
+		padding-bottom: 8px;
+		overflow-x: auto;
+	}
+
+	&__link {
+		font-weight: $fw-400;
+		white-space: nowrap;
+		text-transform: uppercase;
+
+		&--current {
+			font-weight: $fw-700;
+			pointer-events: none;
+		}
+	}
+}

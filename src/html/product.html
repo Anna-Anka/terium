@@ -1,0 +1,23 @@
+@include('./components/links/_head.html',
+{ 'title' : 'ТериумПро — Восстановление и защита вашего двигателя | О продукте' }
+)
+<!--  -->
+@include('./components/_header.html')
+
+@include('./components/_breadcrumbs.html', {
+    'current' : 'о продукте'
+})
+
+<main class="main">
+    @include('./product-page/_benefit.html')
+</main>
+
+@include('./components/_buy.html')
+
+@include('./components/_consultation.html')
+
+@include('./components/_contacts.html')
+
+@include('./components/_footer.html')
+<!--  -->
+@include('./components/links/_bottom.html')

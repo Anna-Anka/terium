@@ -11,6 +11,7 @@
 // * components
 @import './components/search';
 @import './components/user-nav';
+@import './components/breadcrumbs';
 @import './components/consultation';
 @import './components/buy';
 @import './components/contacts';
@@ -34,3 +35,6 @@
 @import './home-page/hero';
 @import './home-page/result';
 @import './home-page/reviews';
+
+// * product-page
+@import './product-page/benefit';

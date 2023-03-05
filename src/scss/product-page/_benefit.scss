@@ -1,0 +1,159 @@
+.benefit-title {
+	@include adaptiv-value('margin-bottom', 40, 10, 1);
+	@include adaptiv-value('fon-size', 52, 22, 1);
+}
+
+.benefit {
+	padding-top: 0;
+
+	&__container {
+		@include mq(lg) {
+			padding: 0;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		padding: 60px 80px;
+		overflow: hidden;
+		background-color: $grey-200;
+
+		@include mq(lg) {
+			flex-direction: column;
+			padding: 60px 24px;
+		}
+
+		@include mq(sm) {
+			padding: 40px 24px;
+		}
+	}
+
+	&__headding {
+		position: relative;
+	}
+
+	&__headding,
+	&__content {
+		width: 50%;
+
+		@include mq(lg) {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		@include adaptiv-value('margin-bottom', 40, 12, 1);
+	}
+
+	&__buttons {
+		display: flex;
+
+		@include mq(lg) {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include mq(lg) {
+				display: flex;
+			}
+
+			@include mq(sm) {
+				flex-direction: column;
+			}
+		}
+	}
+
+	&__button {
+		&:not(:last-child) {
+			margin-right: 5px;
+
+			@include mq(sm) {
+				margin-right: 0;
+				margin-bottom: 5px;
+			}
+		}
+
+		@include mq(lg) {
+			width: 50%;
+		}
+
+		@include mq(sm) {
+			width: 100%;
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		bottom: 0;
+		left: -40px;
+		width: 100%;
+		max-width: 592px;
+		height: 592px;
+        @include bg-conatin;
+		transform: translateY(60%);
+
+		@include mq(lg) {
+			display: none;
+		}
+	}
+
+	&__items {
+		@include mq(lg) {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 15px;
+			margin-bottom: 30px;
+		}
+
+		@include mq(md) {
+			grid-template-columns: 1fr;
+		}
+
+		@include mq(sm) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		position: relative;
+		width: 100%;
+		line-height: 1.4;
+		counter-increment: question-counter;
+		@include adaptiv-value('font-size', 18, 14, 1);
+		@include adaptiv-value('padding-left', 77, 46, 1);
+		@include adaptiv-value('padding-top', 15, 8, 1);
+		@include adaptiv-value('padding-bottom', 15, 8, 1);
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include adaptiv-value('width', 55, 36, 1);
+			@include adaptiv-value('height', 55, 36, 1);
+			color: $white;
+			font-weight: $fw-700;
+			font-family: $uniSans;
+			background-color: $grey-600;
+			border-radius: 50%;
+			content: '0' counter(question-counter) '';
+			@include flex-all-center;
+			@include adaptiv-value('font-size', 20, 13, 1);
+		}
+
+		&:nth-child(n + 10) {
+			&::before {
+				content: counter(question-counter);
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+
+			@include mq(lg) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
