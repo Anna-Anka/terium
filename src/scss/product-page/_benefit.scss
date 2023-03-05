@@ -91,8 +91,9 @@
 		width: 100%;
 		max-width: 592px;
 		height: 592px;
-        @include bg-conatin;
+		@include bg-conatin;
 		transform: translateY(60%);
+		filter: drop-shadow(0 4px 42px rgba($dark-800, 0.3));
 
 		@include mq(lg) {
 			display: none;

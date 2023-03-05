@@ -1,0 +1,37 @@
+.principle {
+	&__wrapper {
+		@include flex-center-sb;
+
+        @include mq(md) {
+            flex-direction: column;
+        }
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 625px;
+		margin-right: 25px;
+
+        @include mq(md) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+	}
+
+	&__text {
+		@include adaptiv-value('font-size', 20, 14, 1);
+	}
+
+	&__bg {
+		width: 100%;
+		max-width: 670px;
+		height: 566px;
+		filter: drop-shadow(14px 24px 40px rgba($black, 0.18));
+        @include bg-conatin;
+
+        @include mq(md) {
+            max-width: 258px;
+            height: 217px;
+        }
+	}
+}
