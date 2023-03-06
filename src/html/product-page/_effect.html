@@ -1,0 +1,26 @@
+<section class="effect">
+    @include('../components/_marquee.html')
+    <div class="effect__bg" style="background-image: url('img/effect-bg.jpg');">
+        <h2 class="title">
+            Эффект от применения добавки Териум <span class="title__accent">Про</span>
+        </h2>
+    </div>
+    <div class="effect__wrapper">
+        <div class="container">
+            <ul class="effect__inner">
+                <li class="effect__list">
+                    @include('../components/cards/_effect-card.html', {
+                        'title' : 'На новом двигателе:',
+                        'items' : '<li class="effect-card__item">Длительное время отсутствие износа вообще и доведение зазоров до идеального состояния</li><li class="effect-card__item">Улучшение показателей мощности и снижение расхода топлива и масла</li>'
+                    })
+                </li>
+                <li class="effect__list">
+                    @include('../components/cards/_effect-card.html', {
+                    'title' : 'На автомобилях с пробегом:',
+                    'items' : '<li class="effect-card__item">Остановка износа</li><li class="effect-card__item">Полное либо частичное (в зависимости от состояния) восстановление металлических деталей - цилиндра, колец, вкладышей, коленчатого вала</li>'
+                })
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

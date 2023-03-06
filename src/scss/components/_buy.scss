@@ -1,6 +1,8 @@
 .buy {
-	z-index: 2;
-	background-color: $grey-200;
+	&__inner {
+		z-index: 2;
+		background-color: $grey-200;
+	}
 
 	&__container {
 		@include mq(lg) {
@@ -107,7 +109,7 @@
 
 			@include mq(sm) {
 				margin-right: 0;
-                margin-bottom: 5px;
+				margin-bottom: 5px;
 			}
 		}
 	}
