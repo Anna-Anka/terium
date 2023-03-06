@@ -1,0 +1,87 @@
+.instruction {
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		@include adaptiv-value('margin-bottom', 40, 12, 1);
+
+		@include mq(lg) {
+			flex-direction: column;
+		}
+	}
+
+	&__headding {
+		width: 45%;
+		margin-right: 25px;
+
+		@include mq(lg) {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__subtext {
+		@include adaptiv-value('font-size', 20, 14, 1);
+	}
+
+	&__recommendation {
+		position: relative;
+		width: 50%;
+		padding: 21px 30px 21px 130px;
+		background-color: $blue-150;
+
+		&::before {
+			position: absolute;
+			top: 21px;
+			left: 30px;
+			width: 80px;
+			height: 80px;
+			background-image: url('../img/icons/warning.svg');
+			content: '';
+			@include bg-conatin;
+
+			@include mq(md) {
+				top: 16px;
+				left: 16px;
+				width: 36px;
+				height: 36px;
+			}
+		}
+
+		@include mq(lg) {
+			width: 100%;
+		}
+
+		@include mq(md) {
+			padding: 16px 16px 16px 64px;
+		}
+	}
+
+	&__subtitle {
+		@include adaptiv-value('font-size', 20, 14, 1);
+		margin-bottom: 2px;
+		color: $blue-600;
+		font-weight: $fw-700;
+		font-family: $uniSans;
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(291px, 1fr));
+        @include adaptiv-value('column-gap', 66, 20, 1);
+
+        @include mq(lg) {
+            column-gap: 20px;
+        }
+
+        @include mq(md) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        @include mq(sm) {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 12px;
+        }
+	}
+}

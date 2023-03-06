@@ -1,0 +1,74 @@
+.instruction-card {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	min-height: 334px;
+
+	@include mq(sm) {
+		min-height: 160px;
+	}
+
+	&__content {
+        position: relative;
+        z-index: 3;
+		width: 100%;
+		padding-left: 70px;
+
+        @include mq(sm) {
+            padding-left: 50px;
+        }
+	}
+
+	&__number,
+	&__title {
+		font-weight: $fw-700;
+		font-family: $uniSans;
+	}
+
+	&__decor {
+		position: relative;
+		display: flex;
+	}
+
+	&__number {
+		color: $grey-300;
+		@include adaptiv-value('font-size', 200, 80, 1);
+	}
+
+	&__triangle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		transform: translateX(50%);
+
+		@include mq(sm) {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include mq(sm) {
+				right: 10px;
+				display: block;
+			}
+		}
+	}
+
+	&__bg {
+		@include bg-conatin;
+		display: block;
+		@include adaptiv-value('width', 58, 32, 1);
+		@include adaptiv-value('height', 58, 32, 1);
+		@include adaptiv-value('margin-bottom', 12, 5, 1);
+	}
+
+	&__title {
+		@include adaptiv-value('font-size', 20, 16, 1);
+		@include adaptiv-value('margin-bottom', 10, 5, 1);
+	}
+
+	&__text {
+		@include adaptiv-value('font-size', 16, 12, 1);
+	}
+}

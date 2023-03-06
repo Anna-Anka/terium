@@ -1,0 +1,69 @@
+<section class="instruction section">
+    <div class="container">
+        <div class="instruction__top">
+            <div class="instruction__headding">
+                <h2 class="instruction__title title">
+                    <span class="title__accent">инструкция </span>по применению
+                </h2>
+                <p class="instruction__subtext">
+                    Флакон расчитанна обработку двигателя с объемом масла до 5 литров. При большом объеме масла в системе используется дополнительный флакон на кждые 5 литров масла
+                </p>
+            </div>
+            <div class="instruction__recommendation">
+                <span class="instruction__subtitle">
+                    Рекомендация
+                </span>
+                <p class="instruction__text">
+                    Для достижения максимального эффекта рекомендуется обрабатывать исправный, имеющий не более 60% износа двигатель. Обработка проъодит в два этапа не более чем за 3000 км до
+                    замены масла и
+                    масленного
+                    фильтра
+                </p>
+            </div>
+        </div>
+        <ul class="instruction__items">
+            <li class="instruction__item">
+                @include('../components/cards/_instruction-card.html', {
+                'number' : '1',
+                'title' : 'Прогреть двигатель',
+                'text' : '<p>Прогрейте двигатель до рабочей температуры</p>'
+                })
+            </li>
+            <li class="instruction__item">
+                @include('../components/cards/_instruction-card.html', {
+                'number' : '2',
+                'title' : 'Заглушить двигатель',
+                'text' : '<p>Заглушите двигатель, для дальнейшего этапа</p>'
+                })
+            </li>
+            <li class="instruction__item">
+                @include('../components/cards/_instruction-card.html', {
+                'number' : '3',
+                'title' : 'Подготовить флакон',
+                'text' : '<p>Тщательно встряхните флакон до распределения осадка по всему объему флакона</p>'
+                })
+            </li>
+            <li class="instruction__item">
+                @include('../components/cards/_instruction-card.html', {
+                'number' : '4',
+                'title' : 'Залить половину флакона',
+                'text' : '<p>Залейте половину флакона в маслозаливную горловину двителя</p>'
+                })
+            </li>
+            <li class="instruction__item">
+                @include('../components/cards/_instruction-card.html', {
+                'number' : '5',
+                'title' : 'Совершить поездку',
+                'text' : '<p>Cовершите поездку в течение 30 минут в спокойном режиме, или на холостых оборотах 30-35 минут каждые 5 минут повышайте, удерживать и снижать обороты, имитируя поездку в течение двух минут</p>'
+                })
+            </li>
+            <li class="instruction__item">
+                @include('../components/cards/_instruction-card.html', {
+                'number' : '6',
+                'title' : 'Следующее использование',
+                'text' : '<p>Оставшийся состав залейте примерно черпез 500 км пробега, но не менее чем за 3000 км доштатного ТО либо после замены масла и фильтра</p>'
+                })
+            </li>
+        </ul>
+    </div>
+</section>

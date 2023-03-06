@@ -20,6 +20,7 @@
 // * cards 
 @import './components/cards/result-card';
 @import './components/cards/review-card';
+@import './components/cards/instruction-card';
 
 // * header
 @import './components/header/header';
@@ -39,3 +40,4 @@
 // * product-page
 @import './product-page/benefit';
 @import './product-page/principle';
+@import './product-page/instruction';
