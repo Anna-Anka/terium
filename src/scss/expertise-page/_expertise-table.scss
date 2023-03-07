@@ -1,0 +1,93 @@
+.expertise-table {
+	padding-top: 0;
+
+	&__top {
+		width: 100%;
+		max-width: 690px;
+		margin: 0 auto;
+		text-align: center;
+		@include adaptiv-value('margin-bottom', 40, 20, 1);
+
+		@include mq(md) {
+			max-width: 100%;
+		}
+	}
+
+	&__text {
+		@include adaptiv-value('font-size', 14, 12, 1);
+	}
+
+	&__bottom {
+		background-color: $grey-200;
+		@include adaptiv-value('padding', 45, 24, 1);
+	}
+
+	&__subtitle {
+		@include adaptiv-value('margin-bottom', 14, 10, 1);
+		@include adaptiv-value('font-size', 20, 16, 1);
+	}
+
+	&__documents {
+		display: flex;
+		justify-content: space-between;
+
+		@include mq(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__more {
+		position: relative;
+		width: 49%;
+		@include adaptiv-value('padding-left', 95, 61, 1);
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			content: '';
+			@include adaptiv-value('width', 80, 46, 1);
+			@include adaptiv-value('height', 80, 46, 1);
+			@include bg-conatin;
+		}
+
+        &--download {
+            &::before {
+                background-image: url('../img/icons/download.svg');
+            }
+        }
+
+        &--read {
+            &::before {
+                background-image: url('../img/icons/read.svg');
+            }
+        }
+
+		@include mq(md) {
+			width: 100%;
+		}
+
+		&:not(:last-child) {
+			margin-right: 20px;
+
+			@include mq(md) {
+				margin-right: 0;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__document {
+		@include adaptiv-value('margin-bottom', 4, 2, 1);
+		@include adaptiv-value('font-size', 18, 14, 1);
+        display: block;
+	}
+
+	&__link {
+		font-weight: $fw-700;
+		font-family: $uniSans;
+		text-transform: uppercase;
+		@include adaptiv-value('font-size', 18, 14, 1);
+	}
+}
