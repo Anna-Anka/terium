@@ -15,6 +15,7 @@
 @import './components/consultation';
 @import './components/buy';
 @import './components/contacts';
+@import './components/number-list';
 @import './components/footer';
 
 // * cards 
@@ -43,3 +44,6 @@
 @import './product-page/principle';
 @import './product-page/instruction';
 @import './product-page/effect';
+
+// * expertise-page
+@import './expertise-page/expertise';

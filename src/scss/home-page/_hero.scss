@@ -91,7 +91,7 @@
 	}
 
 	&__product {
-		@include bg-conatin;
+        object-fit: contain;
 		position: absolute;
 		top: 50%;
 		left: -6%;

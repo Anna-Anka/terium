@@ -117,43 +117,14 @@
 		}
 	}
 
-	&__item {
-		position: relative;
-		width: 100%;
-		line-height: 1.4;
-		counter-increment: question-counter;
-		@include adaptiv-value('font-size', 18, 14, 1);
-		@include adaptiv-value('padding-left', 77, 46, 1);
-		@include adaptiv-value('padding-top', 15, 8, 1);
-		@include adaptiv-value('padding-bottom', 15, 8, 1);
+	.number-list {
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 25px;
 
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			@include adaptiv-value('width', 55, 36, 1);
-			@include adaptiv-value('height', 55, 36, 1);
-			color: $white;
-			font-weight: $fw-700;
-			font-family: $uniSans;
-			background-color: $grey-600;
-			border-radius: 50%;
-			content: '0' counter(question-counter) '';
-			@include flex-all-center;
-			@include adaptiv-value('font-size', 20, 13, 1);
-		}
-
-		&:nth-child(n + 10) {
-			&::before {
-				content: counter(question-counter);
-			}
-		}
-
-		&:not(:last-child) {
-			margin-bottom: 15px;
-
-			@include mq(lg) {
-				margin-bottom: 0;
+				@include mq(lg) {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}

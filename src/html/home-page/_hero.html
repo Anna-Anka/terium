@@ -19,9 +19,13 @@
                 </div>
             </div>
         </div>
-        <div class="hero__bg" aria-hidden="true">
-            <div class="hero__product" style="background-image: url('img/product.png');"> </div>
-            <div class="hero__img" style="background-image: url('img/hero-bg.png');"> </div>
+        <div class="hero__bg">
+            <picture>
+               <source srcset="img/product.avif" type="image/avif">
+               <source srcset="img/product.webp" type="image/webp">
+               <img class="hero__product" src="img/product.png" alt="Териум про" width="558" height="664" loading="lazy">
+            </picture>
+            <div class="hero__img" style="background-image: url('img/hero-bg.png');" aria-hidden="true"> </div>
         </div>
     </div>
     @include('../components/_marquee.html')
