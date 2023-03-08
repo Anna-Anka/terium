@@ -16,6 +16,7 @@
 @import './components/buy';
 @import './components/contacts';
 @import './components/number-list';
+@import './components/social';
 @import './components/footer';
 
 // * cards 
@@ -48,3 +49,7 @@
 // * expertise-page
 @import './expertise-page/expertise';
 @import './expertise-page/expertise-table';
+
+// * club-page
+// @import './club-page/expertise';
+@import './club-page/connect';

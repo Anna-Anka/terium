@@ -1,0 +1,16 @@
+.social {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+           @include adaptiv-value('margin-right', 15, 10, 1);
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        @include adaptiv-value('width', 40, 36, 1);
+        @include adaptiv-value('height', 40, 36, 1);
+        @include bg-conatin;
+    }
+}

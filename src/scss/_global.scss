@@ -40,8 +40,9 @@ body {
 	font-weight: $fw-700;
 	font-size: 20px;
 	font-family: $uniSans;
+	text-align: center;
 	text-transform: uppercase;
-    @include adaptiv-value('font-size', 20, 16, 1);
+	@include adaptiv-value('font-size', 20, 16, 1);
 
 	&::before {
 		position: absolute;
@@ -137,16 +138,16 @@ body {
 .title {
 	margin-bottom: 10px;
 	font-weight: $fw-700;
-    @include adaptiv-value('font-size', 38, 18, 1);
+	@include adaptiv-value('font-size', 38, 18, 1);
 	font-family: $uniSans;
 	line-height: 1.4;
-    text-transform: uppercase;
+	text-transform: uppercase;
 
 	&__accent {
 		color: $blue-600;
 	}
 
-    &__nonaccent {
-        color: $grey-600;
-    }
+	&__nonaccent {
+		color: $grey-600;
+	}
 }

@@ -1,0 +1,125 @@
+.connect {
+	padding-top: 0;
+	color: $white;
+
+	&__container {
+		@include mq(lg) {
+			padding: 0;
+		}
+	}
+
+	&__wrapper {
+		@include adaptiv-value('padding-top', 70, 40, 1);
+		@include adaptiv-value('padding-bottom', 70, 40, 1);
+		display: flex;
+        justify-content: space-between;
+		padding-right: 80px;
+		padding-left: 80px;
+		background-color: $dark-800;
+
+		@include mq(lg) {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+
+		@include mq(md) {
+			flex-direction: column;
+		}
+	}
+
+	&__content,
+	&__contacts {
+		width: 48%;
+
+		@include mq(md) {
+			width: 100%;
+		}
+	}
+
+	&__content {
+		margin-right: 30px;
+
+		@include mq(lg) {
+			margin-right: 0;
+			margin-bottom: 30px;
+		}
+
+		@include mq(md) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		@include adaptiv-value('font-size', 16, 14, 1);
+		margin-bottom: 40px;
+
+		@include mq(md) {
+			margin-bottom: 0;
+		}
+
+		&--contacts {
+			@include adaptiv-value('font-size', 16, 12, 1);
+			@include adaptiv-value('margin-bottom', 20, 15, 1);
+		}
+	}
+
+	&__buttons {
+		display: flex;
+
+		@include mq(md) {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include mq(md) {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+
+	&__button {
+		&--reverse {
+			color: $white;
+
+			&::before {
+				border-color: rgba($white, 0.5);
+			}
+		}
+
+        @include mq(lg) {
+            padding: 14px 20px;
+            font-size: 16px;
+        }
+
+		@include mq(md) {
+			width: 100%;
+		}
+
+		&:not(:last-child) {
+			margin-right: 5px;
+
+			@include mq(md) {
+				margin-right: 5px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	&__contacts {
+		@include mq(md) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__subtitle {
+		display: block;
+		font-family: $fw-700;
+		font-family: $uniSans;
+		text-transform: uppercase;
+		@include adaptiv-value('margin-bottom', 10, 4, 1);
+		@include adaptiv-value('font-size', 20, 16, 1);
+	}
+}
