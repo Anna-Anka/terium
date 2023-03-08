@@ -17,6 +17,81 @@
 		@include adaptiv-value('font-size', 14, 12, 1);
 	}
 
+    &__wrapper {
+        overflow-x: auto;
+    }
+
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+        line-height: 1.4;
+	}
+
+	&__item {
+		font-weight: $fw-300;
+	}
+
+	&__items {
+		font-weight: $fw-300;
+
+		&--headding {
+			background-color: $grey-200;
+
+			.expertise-table__item {
+                @include adaptiv-value('font-size', 18, 14, 1);
+				font-weight: $fw-600;
+			}
+		}
+
+		&--bg {
+			background-color: $grey-200;
+		}
+	}
+
+	&__item {
+        @include adaptiv-value('		width', 155, 120, 1);
+        @include adaptiv-value('		min-width', 155, 120, 1);
+		padding: 20px;
+		text-align: center;
+		@include adaptiv-value('padding', 20, 12, 1);
+        @include adaptiv-value('font-size', 18, 14, 1);
+		border-right: 1px solid rgba($black, 0.2);
+
+		&:last-child {
+			border-right: none;
+		}
+
+		&--first {
+			position: relative;
+             @include adaptiv-value('		width', 270, 155, 1);
+        @include adaptiv-value('		min-width', 270, 155, 1);
+			border-right: none;
+            @include adaptiv-value('font-size', 18, 12, 1);
+
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				box-shadow: 16px 0 18px rgba($black, 0.14);
+				content: '';
+			}
+		}
+
+		&--accent {
+			color: $blue-600;
+		}
+	}
+
+	&__small {
+		@include adaptiv-value('font-size', 15, 12, 1);
+		display: block;
+		@include adaptiv-value('margin-top', 6, 2, 1);
+		font-weight: $fw-300;
+	}
+
 	&__bottom {
 		background-color: $grey-200;
 		@include adaptiv-value('padding', 45, 24, 1);
@@ -52,17 +127,17 @@
 			@include bg-conatin;
 		}
 
-        &--download {
-            &::before {
-                background-image: url('../img/icons/download.svg');
-            }
-        }
+		&--download {
+			&::before {
+				background-image: url('../img/icons/download.svg');
+			}
+		}
 
-        &--read {
-            &::before {
-                background-image: url('../img/icons/read.svg');
-            }
-        }
+		&--read {
+			&::before {
+				background-image: url('../img/icons/read.svg');
+			}
+		}
 
 		@include mq(md) {
 			width: 100%;
@@ -81,7 +156,7 @@
 	&__document {
 		@include adaptiv-value('margin-bottom', 4, 2, 1);
 		@include adaptiv-value('font-size', 18, 14, 1);
-        display: block;
+		display: block;
 	}
 
 	&__link {
