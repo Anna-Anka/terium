@@ -24,6 +24,7 @@
 @import './components/cards/review-card';
 @import './components/cards/instruction-card';
 @import './components/cards/effect-card';
+@import './components/cards/club-card';
 
 // * header
 @import './components/header/header';
@@ -51,5 +52,5 @@
 @import './expertise-page/expertise-table';
 
 // * club-page
-// @import './club-page/expertise';
+@import './club-page/club';
 @import './club-page/connect';

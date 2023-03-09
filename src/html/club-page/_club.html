@@ -1,0 +1,41 @@
+<section class="club">
+    <div class="club__container container">
+        <h2 class="club__title title">
+            <span class="title__accent">Клуб </span>привелегей при покупке териум <span class="title__nonaccent">про</span>
+        </h2>
+        <ul class="club__items">
+            <li class="club__item">
+                @include('../components/cards/_club-card.html', {
+                    'number' : '1',
+                    'title' : 'Купить препарат Териумпро',
+                    'text' : '<p>Купите препарат зарегестрируйте свой номер. Вы состоите в клубе!</p>',
+                    'users' : '1'
+                })
+            </li>
+            <li class="club__item">
+                @include('../components/cards/_club-card.html', {
+                    'number' : '2',
+                    'title' : 'Пригласите одного или более друзей',
+                    'text' : '<p>Заинтерейсуйте одного или более из своих друзей. Ваш друг должен купить и опровобовать препарат териумпро. Вы получите 5% от суммы покупки вашего друга.</p>',
+                    'users' : '2'
+                })
+            </li>
+            <li class="club__item">
+                @include('../components/cards/_club-card.html', {
+                    'number' : '3',
+                    'title' : 'У друга есть друг?',
+                    'text' : '<p>У вашего друга есть друг который хочет опробовать териумпро? Заинтересуйте его. Вы и ваш друг получите 5% от этой покупки!</p>',
+                    'users' : '3'
+                })
+            </li>
+            <li class="club__item">
+                @include('../components/cards/_club-card.html', {
+                    'number' : '4',
+                    'title' : 'все приглашенные друзья',
+                    'text' : '<p>После того как будут приглашены все друзья друзей, на 5 уровне вниз. Ваша привелегия закончится. Но всегда можно начать все занова!</p>',
+                    'users' : '5'
+                })
+            </li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,44 @@
+<article class="club-card">
+    <span class="club-card__count">
+        <span class="club-card__number">0@number</span>
+        <span class="club-card__number club-card__number--mobile">@number</span>
+    </span>
+    <div class="club-card__wrapper">
+        <div class="club-card__content">
+            <h3 class="club-card__title">@title</h3>
+            <div class="club-card__text">@text</div>
+        </div>
+
+        <ul class="club-card__users" aria-hidden="true">
+            @if(context.users === '1') {
+                <li class="club-card__user club-card__user--accent" style="background-image: url('img/icons/user.svg');"></li>
+            }
+
+            @if(context.users === '2') {
+                <li class="club-card__user club-card__user--accent" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+            }
+
+            @if(context.users === '3') {
+                <li class="club-card__user club-card__user--accent" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+            }
+
+            @if(context.users === '4') {
+                <li class="club-card__user club-card__user--accent" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+            }
+
+            @if(context.users === '5') {
+                <li class="club-card__user club-card__user--accent" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+                <li class="club-card__user" style="background-image: url('img/icons/user.svg');"></li>
+            }
+        </ul>
+    </div>
+</article>

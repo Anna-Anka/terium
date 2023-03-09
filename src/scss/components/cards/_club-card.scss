@@ -1,0 +1,104 @@
+.club-card {
+	display: flex;
+	width: 100%;
+	min-height: 200px;
+	background-color: $white;
+
+	&__count {
+		@include adaptiv-value('width', 218, 68, 1);
+		position: relative;
+		width: 100%;
+		max-width: 218px;
+		overflow: hidden;
+	}
+
+	&__title,
+	&__number {
+		font-weight: $fw-700;
+		font-family: $uniSans;
+	}
+
+	&__number {
+		@include adaptiv-value('font-size', 200, 120, 1);
+		position: absolute;
+		right: -18%;
+		bottom: -55%;
+		color: rgba($dark-800, 0.05);
+
+		@include mq(md) {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include mq(md) {
+				display: flex;
+			}
+		}
+
+		@include mq(lg) {
+			right: -8%;
+			bottom: -25%;
+			font-size: 120px;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		padding: 40px 60px;
+		box-shadow: 0 4px 34px rgba($black, 0.05);
+
+		@include mq(lg) {
+			padding: 40px;
+		}
+
+		@include mq(sm) {
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 24px 20px;
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 680px;
+		margin-right: 55px;
+
+		@include mq(lg) {
+			margin-right: 14px;
+		}
+
+		@include mq(sm) {
+			margin-right: 0;
+			margin-bottom: 8px;
+		}
+	}
+
+	&__title {
+		@include adaptiv-value('font-size', 20, 16, 1);
+		@include adaptiv-value('margin-bottom', 10, 2, 1);
+		text-transform: uppercase;
+	}
+
+	&__text {
+		@include adaptiv-value('font-size', 16, 12, 1);
+	}
+
+	&__users {
+		display: flex;
+	}
+
+	&__user {
+		@include adaptiv-value('width', 45, 32, 1);
+		@include adaptiv-value('height', 45, 32, 1);
+		opacity: 0.2;
+		@include bg-conatin;
+
+		&--accent {
+			opacity: 1;
+		}
+	}
+}
