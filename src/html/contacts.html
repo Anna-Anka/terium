@@ -1,0 +1,22 @@
+@include('./components/links/_head.html',
+{ 'title' : 'ТериумПро — Восстановление и защита вашего двигателя | Контакты' }
+)
+<!--  -->
+@include('./components/_header.html')
+
+@include('./components/_breadcrumbs.html', {
+'current' : 'Контакты'
+})
+
+<main class="main">
+    @include('./contacts-page/_contacts-page.html')
+</main>
+
+
+@include('./components/_consultation.html')
+
+@include('./components/_contacts.html')
+
+@include('./components/_footer.html')
+<!--  -->
+@include('./components/links/_bottom.html')
