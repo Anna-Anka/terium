@@ -1,0 +1,86 @@
+<form class="order-form" action="#">
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Ваши данные</legend>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-name">Введите ваше имя</label>
+            <input class="order-form__field" name="order-name" type="text" placeholder="Имя" id="order-name" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-surname">Введите вашу фамилию</label>
+            <input class="order-form__field" name="order-surname" type="text" placeholder="Фамилия" id="order-surname" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-tel">Введите номер телефона</label>
+            <input class="order-form__field" name="order-tel" type="tel" placeholder="Номер телефона" id="order-tel" inputmode="text" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-email">Введите почту</label>
+            <input class="order-form__field" name="order-email" type="email" placeholder="Почта" id="order-email" required>
+        </div>
+    </fieldset>
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Доставка</legend>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-city">Введите город</label>
+            <input class="order-form__field" name="order-city" type="text" placeholder="Город" id="ordercitye" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-address">Введите адрес</label>
+            <input class="order-form__field" name="order-address" type="text" placeholder="Адрес" id="order-address" required>
+        </div>
+        <label class="order-form__agree">
+            <input class="order-form__hidden" type="checkbox" name="agree">
+            <span class="order-form__visible order-form__visible--agree" aria-hidden="true"></span>
+            Я соглашаюсь с <a href="#">политикой конфенденциальности</a>
+        </label>
+    </fieldset>
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Способ доставки</legend>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="delivery" value="почтой России">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                Доставка почтой России, от 5 дней, 533 рубля
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="delivery" value="СДЕК">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                Доставка СДЕК, от 2 дня, 230 рублей
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="delivery" value="Эксперсс">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                Эксперсс доставка, от 1-2 дней, 670 рублей
+            </label>
+        </div>
+    </fieldset>
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Способ оплаты</legend>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="pay" value="SberPay">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                SberPay
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="pay" value="По QR-коду">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                По QR-коду
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="По СПБ переводу" value="Эксперсс">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                По СПБ переводу
+            </label>
+        </div>
+    </fieldset>
+    <button class="order-form__button button button--normal" type="submit">Отправить заявку</button>
+</form>

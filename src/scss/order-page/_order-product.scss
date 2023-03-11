@@ -1,32 +1,41 @@
 .order-product {
-	position: relative;
-	@include flex-center-sb;
-	padding: 10px 0;
-	padding-right: 140px;
-
-	@include mq(lg) {
-		padding-right: 50px;
+    @include adaptiv-value('margin-bottom', 60, 20, 1);
+    
+    &__title {
+		@include adaptiv-value('margin-bottom', 20, 10, 1);
+		@include subtitle;
 	}
 
-	@include mq(sm) {
-		padding-right: 40px;
-	}
+	&__wrapper {
+		position: relative;
+		@include flex-center-sb;
+		padding: 10px 0;
+		padding-right: 140px;
 
-	&::before,
-	&::after {
-		position: absolute;
-		width: 100%;
-		height: 1px;
-		background-color: rgba($dark-800, 0.1);
-		content: '';
-	}
+		@include mq(lg) {
+			padding-right: 50px;
+		}
 
-	&::before {
-		top: 0;
-	}
+		@include mq(sm) {
+			padding-right: 40px;
+		}
 
-	&::after {
-		bottom: 0;
+		&::before,
+		&::after {
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background-color: rgba($dark-800, 0.1);
+			content: '';
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
 	}
 
 	&__card {
@@ -74,7 +83,7 @@
 		}
 	}
 
-	&__title {
+	&__subtitle {
 		@include subtitle;
 		margin-bottom: 3px;
 	}

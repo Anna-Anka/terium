@@ -11,7 +11,21 @@
 })
 
 <main class="main">
-    @include('./order-page/_order.html')
+
+    <section class="order">
+        <div class="container">
+            <div class="order__wrapper">
+                <h1 class="order__title title">
+                    Оформление заказа
+                </h1>
+
+                @include('./order-page/_order-product.html')
+
+                @include('./order-page/_order-form.html')
+            </div>
+        </div>
+    </section>
+
 </main>
 
 @include('./components/_contacts.html')
