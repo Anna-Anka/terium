@@ -31,7 +31,7 @@
 @import './components/header/menu';
 
 // * templates
-//@import './templates/stepper';
+@import './templates/stepper';
 //@import './templates/accordion';
 //@import './templates/modal';
 @import './templates/marquee';
@@ -57,3 +57,7 @@
 
 // * contacts-page
 @import './contacts-page/contacts-page';
+
+// * order-page
+@import './order-page/order';
+@import './order-page/order-product';

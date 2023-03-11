@@ -1,0 +1,7 @@
+@mixin subtitle {
+	display: block;
+	font-weight: $fw-700;
+	font-family: $uniSans;
+	@include adaptiv-value('font-size', 20, 16, 1);
+    text-transform: uppercase;
+}

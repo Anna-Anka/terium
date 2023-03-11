@@ -1,0 +1,141 @@
+.order-product {
+	position: relative;
+	@include flex-center-sb;
+	padding: 10px 0;
+	padding-right: 140px;
+
+	@include mq(lg) {
+		padding-right: 50px;
+	}
+
+	@include mq(sm) {
+		padding-right: 40px;
+	}
+
+	&::before,
+	&::after {
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: rgba($dark-800, 0.1);
+		content: '';
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+
+	&__card {
+		display: flex;
+		align-items: center;
+		width: 100%;
+
+		@include mq(sm) {
+			align-items: flex-start;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		background-color: $grey-200;
+		@include adaptiv-value('margin-right', 35, 20, 1);
+		@include adaptiv-value('max-width', 111, 72, 1);
+		@include adaptiv-value('height', 131, 85, 1);
+		@include adaptiv-value('padding', 10, 8, 1);
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	&__content {
+		@include flex-all-center;
+		width: 100%;
+
+		@include mq(md) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__descr {
+		align-items: flex-start;
+		margin-right: 30px;
+
+		@include mq(md) {
+			margin-right: 0;
+			margin-bottom: 12px;
+		}
+	}
+
+	&__title {
+		@include subtitle;
+		margin-bottom: 3px;
+	}
+
+	&__dosage {
+		@include adaptiv-value('font-size', 16, 14, 1);
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+
+		@include mq(md) {
+			margin-left: 0;
+		}
+
+		@include mq(sm) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__stepper {
+		margin-right: 100px;
+
+		@include mq(lg) {
+			margin-right: 50px;
+		}
+
+		@include mq(md) {
+			margin-right: 30px;
+		}
+
+		@include mq(sm) {
+			margin-right: 0;
+			margin-bottom: 14px;
+		}
+	}
+
+	&__price {
+		@include subtitle;
+		white-space: nowrap;
+	}
+
+	&__delete {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 28px;
+		height: 28px;
+		background-image: url('../img/icons/delete.svg');
+		transform: translateY(-50%);
+		@include bg-conatin;
+
+		@include mq(sm) {
+			top: 12px;
+			right: 12px;
+			width: 20px;
+			height: 20px;
+			transform: translateY(0);
+		}
+	}
+}

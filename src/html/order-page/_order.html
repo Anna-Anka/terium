@@ -1,0 +1,50 @@
+<section class="order section">
+    <div class="container">
+        <div class="order__wrapper">
+            <h1 class="order__title title">
+                Оформление заказа
+            </h1>
+            <div class="order__top">
+                <span class="order__subtitle order__subtitle--top">Ваш заказ:</span>
+                <div class="order-product">
+                    <div class="order-product__card">
+                        <div class="order-product__image">
+                            <picture>
+                                <source srcset="img/product.avif" type="image/avif">
+                                <source srcset="img/product.webp" type="image/webp">
+                                <img class="order-product__img" src="img/product.png" alt="ТериумПро" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="order-product__content">
+                            <div class="order-product__descr">
+                                <span class="order-product__title">Териумпро</span>
+                                <span class="order-product__dosage">100 мл</span>
+                            </div>
+                            <div class="order-product__info">
+                                <div class="order-product__stepper stepper">
+                                    <button class="stepper__btn stepper__btn--up" type="button">
+                                        +
+                                    </button>
+                                    <label class="stepper__field">
+                                        <input class="stepper__input" type="number" value="1" name="count" min="1">
+                                    </label>
+                                    <button class="stepper__btn stepper__btn--down stepper__btn--disabled" type="button">
+                                        -
+                                    </button>
+                                </div>
+                            
+                                <span class="order-product__price">1 299 ₽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <button class="order-product__delete" type="button">
+                        <span class="sr-only">Удалить корзину</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -6,12 +6,14 @@
 @import "./mixins/flex";
 @import "./mixins/svg-color";
 
-//Checkboxes
+// * Checkboxes
 @import "./mixins/checkboxes/hidden";
 @import "./mixins/checkboxes/number";
 
-//Adaptive
+// * Adaptive
 @import "./mixins/adaptive/breakpoint";
 @import "./mixins/adaptive/value";
 
+// * Project
+@import "./mixins/project/subtitle";
 

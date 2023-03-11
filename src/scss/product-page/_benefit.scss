@@ -1,6 +1,6 @@
 .benefit-title {
 	@include adaptiv-value('margin-bottom', 40, 10, 1);
-	@include adaptiv-value('fon-size', 52, 22, 1);
+	@include adaptiv-value('font-size', 52, 22, 1);
 }
 
 .benefit {

@@ -115,11 +115,7 @@
 	}
 
 	&__subtitle {
-		display: block;
-		font-family: $fw-700;
-		font-family: $uniSans;
-		text-transform: uppercase;
+		@include subtitle;
 		@include adaptiv-value('margin-bottom', 10, 4, 1);
-		@include adaptiv-value('font-size', 20, 16, 1);
 	}
 }

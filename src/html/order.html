@@ -1,0 +1,21 @@
+@include('./components/links/_head.html',
+{ 'title' : 'ТериумПро — Восстановление и защита вашего двигателя | КОформление заказа' }
+)
+<!--  -->
+@include('./components/_header.html')
+
+@include('./components/_breadcrumbs.html', {
+'count' : '2',
+'2' : 'корзина',
+'current' : 'Оформление заказа'
+})
+
+<main class="main">
+    @include('./order-page/_order.html')
+</main>
+
+@include('./components/_contacts.html')
+
+@include('./components/_footer.html')
+<!--  -->
+@include('./components/links/_bottom.html')

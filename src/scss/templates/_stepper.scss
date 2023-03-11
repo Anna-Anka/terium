@@ -3,54 +3,79 @@
 	display: flex;
 	align-items: center;
 	width: 100%;
-	max-width: 150px;
-	height: 50px;
+	max-width: 117px;
 	user-select: none;
 
 	&__field {
 		display: flex;
-		align-items: center;
+		justify-content: center;
 		width: 100%;
+		max-width: 47px;
 		height: 100%;
-		padding-left: 20px;
-		border: 1px solid #e5e5e5;
-		border-radius: 4px;
+		font-weight: $fw-700;
 	}
 
 	&__input {
-		width: 10px;
-		min-width: 2ex;
-		height: 100%;
-		font-weight: 700;
-		border: none;
-		outline: none;
+		width: 100%;
+		padding: 0 2px;
+		text-align: center;
 		@include number;
 	}
 
-	&__btns {
-		position: absolute;
-		top: 50%;
-		right: 2px;
-		display: flex;
-		flex-direction: column;
-		width: 20%;
-		height: calc(100% - 2px);
-		border-left: 1px solid #e5e5e5;
-		transform: translateY(-50%);
-	}
-
 	&__btn {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		height: 50%;
-		padding: 0;
-		background-color: transparent;
+		@include flex-all-center;
+		position: relative;
+		width: 34px;
+		height: 34px;
+		color: transparent;
+		background-color: rgba($dark-800, 0.1);
 		border: none;
+		border-radius: 50%;
 		cursor: pointer;
 
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 18px;
+			height: 18px;
+			transform: translate(-50%, -50%);
+			content: '';
+			@include bg-conatin;
+		}
+
+		&--up {
+			&::before {
+				background-image: url('../img/icons/plus.svg');
+			}
+		}
+
+		&--down {
+			&::before {
+				background-image: url('../img/icons/minus.svg');
+			}
+		}
+
+		@include mq(sm) {
+			width: 32px;
+			height: 32px;
+
+			&::before {
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		&:hover,
+		&:active {
+			background-color: rgba($dark-800, 1);
+
+			&::before {
+				filter: invert(1);
+			}
+		}
+
 		&--disabled {
-			opacity: 0.5;
 			pointer-events: none;
 		}
 	}

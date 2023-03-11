@@ -17,14 +17,14 @@
 		@include adaptiv-value('font-size', 14, 12, 1);
 	}
 
-    &__wrapper {
-        overflow-x: auto;
-    }
+	&__wrapper {
+		overflow-x: auto;
+	}
 
 	&__table {
 		width: 100%;
+		line-height: 1.4;
 		border-collapse: collapse;
-        line-height: 1.4;
 	}
 
 	&__item {
@@ -38,7 +38,7 @@
 			background-color: $grey-200;
 
 			.expertise-table__item {
-                @include adaptiv-value('font-size', 18, 14, 1);
+				@include adaptiv-value('font-size', 18, 14, 1);
 				font-weight: $fw-600;
 			}
 		}
@@ -49,12 +49,12 @@
 	}
 
 	&__item {
-        @include adaptiv-value('		width', 155, 120, 1);
-        @include adaptiv-value('		min-width', 155, 120, 1);
+		@include adaptiv-value('width', 155, 120, 1);
+		@include adaptiv-value('min-width', 155, 120, 1);
 		padding: 20px;
 		text-align: center;
 		@include adaptiv-value('padding', 20, 12, 1);
-        @include adaptiv-value('font-size', 18, 14, 1);
+		@include adaptiv-value('font-size', 18, 14, 1);
 		border-right: 1px solid rgba($black, 0.2);
 
 		&:last-child {
@@ -63,10 +63,10 @@
 
 		&--first {
 			position: relative;
-             @include adaptiv-value('		width', 270, 155, 1);
-        @include adaptiv-value('		min-width', 270, 155, 1);
+			@include adaptiv-value('width', 270, 155, 1);
+			@include adaptiv-value('min-width', 270, 155, 1);
 			border-right: none;
-            @include adaptiv-value('font-size', 18, 12, 1);
+			@include adaptiv-value('font-size', 18, 12, 1);
 
 			&::before {
 				position: absolute;

@@ -6,8 +6,8 @@
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
 // * stepper
-//import { stepperFunction } from "./functions/stepper";
-//stepperFunction()
+import { stepperFunction } from "./templates/stepper";
+stepperFunction()
 
 // * accordion
 //import { accordionFunction } from "./templates/accordion";

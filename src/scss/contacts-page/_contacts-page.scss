@@ -33,12 +33,8 @@
 	}
 
 	&__subtitle {
-		display: block;
+		@include subtitle;
 		margin-bottom: 10px;
-		font-weight: $fw-700;
-		font-family: $uniSans;
-		text-transform: uppercase;
-		@include adaptiv-value('font-size', 20, 16, 1);
 	}
 
 	&__nonaccent {

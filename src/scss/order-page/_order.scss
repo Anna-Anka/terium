@@ -1,0 +1,35 @@
+.order {
+	padding-top: 0;
+
+	&__title {
+		@include adaptiv-value('font-size', 38, 18, 1);
+		@include adaptiv-value('margin-bottom', 20, 15, 1);
+	}
+
+	&__wrapper {
+		padding: 70px 80px 60px;
+		background-color: $white;
+		box-shadow: 0 4px 40px rgba($black, 0.1);
+
+		@include mq(lg) {
+			padding: 40px;
+		}
+
+		@include mq(sm) {
+			padding: 20px;
+		}
+	}
+
+	&__top {
+		@include adaptiv-value('margin-bottom', 60, 20, 1);
+	}
+
+	&__subtitle {
+		@include adaptiv-value('margin-bottom', 20, 10, 1);
+		@include subtitle;
+
+		&--top {
+			margin-bottom: 10px;
+		}
+	}
+}

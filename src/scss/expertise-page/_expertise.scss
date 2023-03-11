@@ -22,6 +22,7 @@
 
 	&__title {
 		@include adaptiv-value('margin-bottom', 40, 10, 1);
+		@include adaptiv-value('font-size', 52, 22, 1);
 	}
 
 	&__img {
@@ -60,12 +61,8 @@
 	}
 
 	&__subtitle {
-		display: block;
 		margin-bottom: 10px;
-		font-weight: $fw-700;
-		font-family: $uniSans;
-		text-transform: uppercase;
-		@include adaptiv-value('font-size', 20, 16, 1);
+		@include subtitle;
 	}
 
 	&__text {
