@@ -5,14 +5,6 @@ export const stepperFunction = () => {
         const stepperBtnUp = stepper.querySelector('.stepper__btn--up');
         const stepperBtnDown = stepper.querySelector('.stepper__btn--down');
 
-        const stepperInputWidth = () => {
-            if (isNotApple) {
-                stepperInput.style.width = `${stepperInput.value.length + 1}ex`;
-            } else {
-                stepperInput.style.width = `${stepperInput.value.length + 2}ex`;
-            }
-        }
-
         const stepperCount = () => {
             if (count == 1) {
                 stepperBtnDown.classList.add('stepper__btn--disabled');
@@ -36,8 +28,6 @@ export const stepperFunction = () => {
             if (self.value == '0') {
                 self.value = 1;
             };
-
-            stepperInputWidth();
 
             count = stepperInput.value;
 
@@ -64,8 +54,6 @@ export const stepperFunction = () => {
             stepperCount();
 
             stepperInput.value = count;
-
-            stepperInputWidth()
         });
 
         stepperBtnDown.addEventListener('click', (e) => {
@@ -76,8 +64,6 @@ export const stepperFunction = () => {
             stepperCount();
 
             stepperInput.value = count;
-
-            stepperInputWidth()
         });
     }
 }
