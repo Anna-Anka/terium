@@ -17,6 +17,7 @@
 @import './components/contacts';
 @import './components/number-list';
 @import './components/social';
+@import './components/pagination';
 @import './components/footer';
 
 // * cards 
@@ -62,3 +63,6 @@
 @import './order-page/order';
 @import './order-page/order-product';
 @import './order-page/order-form';
+
+// * reviews-page
+@import './reviews-page/reviews-page';

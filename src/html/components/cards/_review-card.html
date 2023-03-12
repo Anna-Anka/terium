@@ -1,4 +1,9 @@
 <article class="review-card">
     <span class="review-card__title">@title</span>
+    <time class="review-card__date" datetime="2021-03-23">23 март, 2021</time>
     <div class="review-card__text">@text</div>
+
+    @if(context.more === 'true') {
+        <button class="review-card__more" type="button">читать далее</button>
+    }
 </article>

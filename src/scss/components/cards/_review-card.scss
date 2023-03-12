@@ -14,17 +14,45 @@
 		font-family: $uniSans;
 		line-height: 1.6;
 		text-transform: uppercase;
-        @include adaptiv-value('font-size', 20, 16, 1);
+		@include adaptiv-value('font-size', 20, 16, 1);
+	}
+
+	&__date {
+		display: block;
+		margin-bottom: 8px;
+		font-size: 14px;
+        text-transform: uppercase;
 	}
 
 	&__text {
 		line-height: 1.4;
-        @include adaptiv-value('font-size', 18, 14, 1);
+		@include adaptiv-value('font-size', 18, 14, 1);
+		@include line-clamp(5);
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
 
 		p {
 			&:not(:last-child) {
 				margin-bottom: 4px;
 			}
 		}
+
+		&--visible {
+			display: block;
+			overflow: visible;
+			text-overflow: unset;
+		}
+	}
+
+	&__more {
+		@include subtitle;
+		color: $blue-600;
+		@include adaptiv-value('font-size', 18, 16, 1);
+
+        &--hidden {
+            display: none;
+        }
 	}
 }

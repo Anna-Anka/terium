@@ -66,13 +66,13 @@
 		}
 
 		&--agree {
+			top: 2px;
 			width: 18px;
 			min-width: 18px;
 			height: 18px;
 			background-color: transparent;
 			border: 2px solid $dark-800;
 			border-radius: 2px;
-            top: 2px;
 
 			&::before {
 				top: -5px;

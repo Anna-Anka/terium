@@ -1,5 +1,9 @@
 .order-product {
     @include adaptiv-value('margin-bottom', 60, 20, 1);
+
+    &--hidden {
+        display: none;
+    }
     
     &__title {
 		@include adaptiv-value('margin-bottom', 20, 10, 1);
