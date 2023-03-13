@@ -44,9 +44,18 @@ burger();
 // import { enableScroll } from './templates/enable-scroll';
 
 // * Реализация модального окна
-//import GraphModal from 'graph-modal';
+import GraphModal from 'graph-modal';
+const modal = new GraphModal('modal');
 
-//const modal = new GraphModal('modal');
+if (document.querySelector('.modal-thank')) {
+    const btnThank = document.querySelector('.modal-thank')
+
+    btnThank.addEventListener('click', () => {
+        const modal = new GraphModal('modal').open('modal-thank');
+    });
+
+    //btnThank.click();
+}
 
 // * Реализация табов
 //import GraphTabs from 'graph-tabs';

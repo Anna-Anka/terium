@@ -6,9 +6,9 @@
 	bottom: 0;
 	left: 0;
 	z-index: 1000;
+	display: flex;
 	overflow-x: hidden;
 	overflow-y: auto;
-	text-align: center;
 	vertical-align: middle;
 	background-color: rgba($black, 0.8);
 	visibility: hidden;
@@ -16,48 +16,93 @@
 	opacity: 0;
 	transition: opacity var(--transition-time), visibility var(--transition-time);
 
-    &::before {
-		display: inline-block;
-		height: 100%;
-		vertical-align: middle;
-		content: '';
-
-		@include mq(sm) {
-			display: none;
-		}
-	}
-
 	&__container {
-		position: relative;
-		display: inline-block;
-		display: none;
-		margin: 50px auto;
-		text-align: left;
-		vertical-align: middle;
-		background-color: $white;
+		display: flex;
+		align-items: center;
+		align-self: center;
+		width: 100%;
+		max-width: 1360px;
+		margin: 0 auto;
+		padding: 20px 10px;
 		cursor: default;
-
-		&.graph-modal-open {
-			display: inline-block;
-		}
 	}
 
 	&__box {
 		position: relative;
 		width: 100%;
-		max-width: 700px;
-		padding: 40px;
+		max-width: 1360px;
+		padding: 40px 60px;
+		overflow-y: hidden;
 		background-color: $white;
-		@include flex-all-center;
+		@include flex-center-sb;
+
+		@include mq(lg) {
+			padding: 40px 30px;
+		}
+
+		@include mq(sm) {
+			padding-top: 50px;
+			padding-bottom: 0;
+		}
 	}
 
 	&__close {
 		position: absolute;
-		top: 10px;
-		right: 10px;
-		width: 20px;
-		height: 20px;
-		background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.001 512.001' style='enable-background:new 0 0 512.001 512.001;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M284.286,256.002L506.143,34.144c7.811-7.811,7.811-20.475,0-28.285c-7.811-7.81-20.475-7.811-28.285,0L256,227.717 L34.143,5.859c-7.811-7.811-20.475-7.811-28.285,0c-7.81,7.811-7.811,20.475,0,28.285l221.857,221.857L5.858,477.859 c-7.811,7.811-7.811,20.475,0,28.285c3.905,3.905,9.024,5.857,14.143,5.857c5.119,0,10.237-1.952,14.143-5.857L256,284.287 l221.857,221.857c3.905,3.905,9.024,5.857,14.143,5.857s10.237-1.952,14.143-5.857c7.811-7.811,7.811-20.475,0-28.285 L284.286,256.002z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+		@include adaptiv-value('top', 32, 16, 1);
+		@include adaptiv-value('right', 32, 16, 1);
+		@include adaptiv-value('width', 46, 32, 1);
+		@include adaptiv-value('height', 46, 32, 1);
+		background-color: $grey-200;
+		border-radius: 50%;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			@include adaptiv-value('width', 24, 16, 1);
+			@include adaptiv-value('height', 24, 16, 1);
+			background-image: url('../img/icons/close.svg');
+			transform: translate(-50%, -50%);
+			content: '';
+			@include bg-conatin;
+		}
+	}
+
+	&__content {
+		@include flex-center-sb;
+		width: 100%;
+
+		@include mq(sm) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 476px;
+	}
+
+	&__title {
+		@include adaptiv-value('font-size', 52, 18, 1);
+	}
+
+	&__bg {
+		position: relative;
+		top: 66px;
+		width: 100%;
+		max-width: 486px;
+		@include adaptiv-value('max-width', 486, 276, 1);
+		@include adaptiv-value('height', 380, 252, 1);
+		@include bg-conatin;
+
+		@include mq(lg) {
+			top: 80px;
+		}
+
+		@include mq(sm) {
+			top: 35px;
+		}
 	}
 
 	&.is-open {
@@ -69,12 +114,11 @@
 }
 
 .fade {
-	opacity: 0;
 	transition: opacity var(--transition-time);
 
 	&.animate-open {
-		opacity: 1;
-		transition: opacity var(--transition-time);
+		width: 100%;
+		max-width: 1360px;
 	}
 }
 

@@ -1,9 +1,14 @@
-<article class="review-card">
-    <span class="review-card__title">@title</span>
-    <time class="review-card__date" datetime="2021-03-23">23 март, 2021</time>
-    <div class="review-card__text">@text</div>
-
-    @if(context.more === 'true') {
+@if(context.type === 'text') {
+    <article class="review-card review-card--text">
+        <span class="review-card__title">@title</span>
+        <time class="review-card__date" datetime="2021-03-23">23 март, 2021</time>
+        <div class="review-card__text">@text</div>
         <button class="review-card__more" type="button">читать далее</button>
-    }
-</article>
+    </article>
+}
+
+@if(context.type === 'video') {
+    <article class="review-card review-card--video">
+        <iframe class="review-card__video" width="560" height="315" src="https://www.youtube.com/embed/WAPcGqXjneY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </article>
+}
