@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.js"></script>
+
+  <title>ТериумПро — Восстановление и защита вашего двигателя | КОформление заказа</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+
+<!--  -->
+<header class="header">
+    <div class="container">
+        <nav class="header__navigation">
+            <a class="header__logo logo" href="#">
+                <img class="logo__img" src="img/logo.svg" alt="логотип" width="233" height="48" loading="lazy">
+            </a>
+            <div class="menu" data-menu>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">О продукте</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Экспертиза</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Клуб</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="menu__user-nav user-nav">
+                    <form class="user-nav__search search" action="#" role="search">
+                        <label class="sr-only" for="search-header">Поиск</label>
+                        <div class="search__item">
+                            <input class="search__field" name="search" type="search" placeholder="Поиск..." id="search-header" required>
+                            <button class="search__button" type="submit">
+                                <span class="sr-only">Найти</span>
+                            </button>
+                        </div>
+                    </form>
+                    <a class="user-nav__cart" href="#">
+                        <span class="sr-only">Корзина</span>
+                        <span class="user-nav__number">1</span>
+                    </a>
+                </div>
+            </div>
+            <a class="header__buy button" href="#">Купить</a>
+            <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                <span class="burger__line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная > </a>
+            </li>
+
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#"> корзина > </a>
+                </li>
+
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current" aria-current="page"> Оформление заказа</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<main class="main">
+
+    <section class="order">
+        <div class="container">
+            <div class="order__wrapper">
+                <h1 class="order__title title">
+                    Оформление заказа
+                </h1>
+
+                <div class="order-product">
+    <span class="order-product__title">Ваш заказ:</span>
+    <div class="order-product__wrapper">
+        <div class="order-product__card">
+            <div class="order-product__image">
+                <picture>
+                    <source srcset="img/product.avif" type="image/avif">
+                    <source srcset="img/product.webp" type="image/webp">
+                    <img class="order-product__img" src="img/product.png" alt="ТериумПро" loading="lazy">
+                </picture>
+            </div>
+            <div class="order-product__content">
+                <div class="order-product__descr">
+                    <span class="order-product__subtitle">Териумпро</span>
+                    <span class="order-product__dosage">100 мл</span>
+                </div>
+                <div class="order-product__info">
+                    <div class="order-product__stepper stepper">
+                        <button class="stepper__btn stepper__btn--up" type="button">
+                            +
+                        </button>
+                        <label class="stepper__field">
+                            <input class="stepper__input" type="number" value="1" name="count" min="1">
+                        </label>
+                        <button class="stepper__btn stepper__btn--down stepper__btn--disabled" type="button">
+                            —
+                        </button>
+                    </div>
+
+                    <span class="order-product__price">1 299 ₽</span>
+                </div>
+            </div>
+        </div>
+        <button class="order-product__delete" type="button">
+            <span class="sr-only">Удалить корзину</span>
+        </button>
+    </div>
+</div>
+
+                <form class="order-form" action="#">
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Ваши данные</legend>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-name">Введите ваше имя</label>
+            <input class="order-form__field" name="order-name" type="text" placeholder="Имя" id="order-name" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-surname">Введите вашу фамилию</label>
+            <input class="order-form__field" name="order-surname" type="text" placeholder="Фамилия" id="order-surname" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-tel">Введите номер телефона</label>
+            <input class="order-form__field" name="order-tel" type="tel" placeholder="Номер телефона" id="order-tel" inputmode="text" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-email">Введите почту</label>
+            <input class="order-form__field" name="order-email" type="email" placeholder="Почта" id="order-email" required>
+        </div>
+    </fieldset>
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Доставка</legend>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-city">Введите город</label>
+            <input class="order-form__field" name="order-city" type="text" placeholder="Город" id="ordercitye" required>
+        </div>
+        <div class="order-form__item">
+            <label class="sr-only" for="order-address">Введите адрес</label>
+            <input class="order-form__field" name="order-address" type="text" placeholder="Адрес" id="order-address" required>
+        </div>
+        <label class="order-form__agree">
+            <input class="order-form__hidden" type="checkbox" name="agree">
+            <span class="order-form__visible order-form__visible--agree" aria-hidden="true"></span>
+            <p>Я соглашаюсь с <a href="#">политикой конфенденциальности</a></p>
+        </label>
+    </fieldset>
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Способ доставки</legend>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="delivery" value="почтой России">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                Доставка почтой России, от 5 дней, 533 рубля
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="delivery" value="СДЕК">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                Доставка СДЕК, от 2 дня, 230 рублей
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="delivery" value="Эксперсс">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                Эксперсс доставка, от 1-2 дней, 670 рублей
+            </label>
+        </div>
+    </fieldset>
+    <fieldset class="order-form__list">
+        <legend class="order-form__subtitle">Способ оплаты</legend>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="pay" value="SberPay">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                SberPay
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="pay" value="По QR-коду">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                По QR-коду
+            </label>
+        </div>
+        <div class="order-form__item">
+            <label class="order-form__inner">
+                <input class="order-form__hidden" type="radio" name="По СПБ переводу" value="Эксперсс">
+                <span class="order-form__visible" aria-hidden="true"></span>
+                По СПБ переводу
+            </label>
+        </div>
+    </fieldset>
+    <span class="order-form__price">
+        <span class="order-form__summ">Итоговая сумма:</span>
+        <span>1 299 ₽</span>
+    </span>
+    <button class="order-form__button button button--normal" type="submit">Отправить заявку</button>
+</form>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<section class="contacts section">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__content">
+                <h2 class="title">
+                    <span class="title__accent">
+                        Связаться
+                    </span> с нами
+                </h2>
+                <div class="contacts__text">
+                    <p>
+                        ТЕРИУМПРО № 1 — добавка в масло для защиты и восстановления бензиновых, дизельных, газовых двигателей (турбированных, атмосферных, форсированных) легковых, грузовых автомобилей, мототехники
+                    </p>
+                </div>
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--phone" href="tel:+70020000000">
+                            +7 (002-00) 0-00-00
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--email" href="mailto:hello@terium.pro">
+                            hello@terium.pro
+                        </a>
+                    </li>
+                </ul>
+                <span class="contacts__subtitle">
+                    Фактический адрес:
+                </span>
+                <p class="contacts__subtext">
+                    ООО РСТПРОМ, 162690, Вологодская обл., р. Череповецкий, п. Тоншаловское, д. Ясная Поляна, ул. Осенняя, д. 10.
+                </p>
+            </div>
+            <div class="contacts__images" style="background-image: url('img/contacts-bg.png');"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" style="background-image: url('img/footer-bg.jpg');">
+    <div class="footer__container container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__inner">
+                    <div class="footer__about">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="логотип" width="233" height="48" loading="lazy">
+                        </a>
+                        <ul class="footer__contacts">
+                            <li class="footer__contact">
+                                <a href="tel:+70020000000">+7 (002-00) 0-00-00</a>
+                            </li>
+                            <li class="footer__contact">
+                                <a href="mailto:Terium-pro@mail.ru">Terium-pro@mail.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="footer__navigation">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О продукте
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link footer__link--active" href="#">
+                                Экспертиза
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Клуб
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__buttons">
+                        <button class="footer__button button" type="button">
+                            Купить
+                        </button>
+                        <button class="footer__button button button--border" type="button">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+                <div class="footer__box">
+                    <p class="footer__address">
+                        ООО РСТПРОМ, 162690, Вологодская обл., р. Череповецкий, п. Тоншаловское, д. Ясная Поляна, ул. Осенняя, д. 10.
+                    </p>
+                    <div class="footer__user-nav user-nav">
+                        <form class="user-nav__search search" action="#" role="search">
+                            <label class="sr-only" for="search-header">Поиск</label>
+                            <div class="search__item">
+                                <input class="search__field" name="search" type="search" placeholder="Поиск..." id="search-header" required>
+                                <button class="search__button" type="submit">
+                                    <span class="sr-only">Найти</span>
+                                </button>
+                            </div>
+                        </form>
+                        <a class="user-nav__cart" href="#">
+                            <span class="sr-only">Корзина</span>
+                            <span class="user-nav__number">1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy">Copyright © 2023 TERIUM-PRO</span>
+                <ul class="footer__private">
+                    <li class="footer__info">
+                        <a href="#">Политика кофендециальности</a>
+                    </li>
+                    <li class="footer__info">
+                        <a href="#">Правила оплаты и возврата</a>
+                    </li>
+                    <li class="footer__info">
+                        <a href="#">Публичная оферта</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--  -->
+</div>
+</body>
+
+</html>

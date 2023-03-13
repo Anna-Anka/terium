@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.js"></script>
+
+  <title>ТериумПро — Восстановление и защита вашего двигателя | О продукте</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+
+<!--  -->
+<header class="header">
+    <div class="container">
+        <nav class="header__navigation">
+            <a class="header__logo logo" href="#">
+                <img class="logo__img" src="img/logo.svg" alt="логотип" width="233" height="48" loading="lazy">
+            </a>
+            <div class="menu" data-menu>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">О продукте</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Экспертиза</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Клуб</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="menu__user-nav user-nav">
+                    <form class="user-nav__search search" action="#" role="search">
+                        <label class="sr-only" for="search-header">Поиск</label>
+                        <div class="search__item">
+                            <input class="search__field" name="search" type="search" placeholder="Поиск..." id="search-header" required>
+                            <button class="search__button" type="submit">
+                                <span class="sr-only">Найти</span>
+                            </button>
+                        </div>
+                    </form>
+                    <a class="user-nav__cart" href="#">
+                        <span class="sr-only">Корзина</span>
+                        <span class="user-nav__number">1</span>
+                    </a>
+                </div>
+            </div>
+            <a class="header__buy button" href="#">Купить</a>
+            <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                <span class="burger__line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<button class="modal-thank" type="button" data-graph-path="modal-thank" style="display: none;">Открыть</button>
+<div class="graph-modal">
+   <div class="graph-modal__container graph-modal__container--thank" role="dialog" aria-modal="true" data-graph-target="modal-thank">
+       <div class="graph-modal__box">
+           <button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+           <div class="graph-modal__content">
+                <div class="graph-modal__info">
+                    <span class="graph-modal__title title">
+                        <span class="title__accent">Спасибо</span>
+                        за вашу заявку
+                    </span>
+                    <p class="graph-modal__text">
+                        Игорь свяжется с вами в ближайшее время!
+                    </p>
+                </div>
+                <div class="graph-modal__bg" style="background-image: url('img/modal-bg.svg');"> </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная > </a>
+            </li>
+
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current" aria-current="page"> о продукте</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<main class="main">
+    <div class="container">
+    <h1 class="benefit-title title">
+        О продукте <span class="title__accent">ТЕРиум</span> <span class="title__nonaccent">про</span>
+    </h1>
+</div>
+
+<section class="benefit section">
+    <div class="benefit__container container">
+        <div class="benefit__wrapper">
+            <div class="benefit__headding">
+                <h2 class="benefit__title title">
+                    <span class="benefit__accent">Польза </span>от применения ТериумПро № 1
+                </h2>
+                <div class="benefit__buttons">
+                    <a class="benefit__button button" href="#">Купить</a>
+                    <a class="benefit__button button button--border" href="#">Подробнее</a>
+                </div>
+                <div class="benefit__bg" style="background-image: url('img/buy-decor.png');"> </div>
+            </div>
+            <div class="benefit__content">
+                <ul class="number-list benefit__items">
+                    <li class="number-list__item">
+                        <span class="number-list__number">01</span>
+                        Продление жизни двигателя
+                    </li>
+                    <li class="number-list__item">
+                        <span class="number-list__number">02</span>
+                        Экономия топлива и масла
+                    </li>
+                    <li class="number-list__item">
+                        <span class="number-list__number">03</span>
+                        Повышение мощности
+                    </li>
+                    <li class="number-list__item">
+                        <span class="number-list__number">04</span>
+                        Снижение затрат на ремонт
+                    </li>
+                    <li class="number-list__item">
+                        <span class="number-list__number">05</span>
+                        Ровная, сбалансированная работа двигателя
+                    </li>
+                    <li class="number-list__item">
+                        <span class="number-list__number">06</span>
+                        Улучшение экологических показателей
+                    </li>
+                    <li class="number-list__item">
+                        <span class="number-list__number">07</span>
+                        Надёжная работа двигателя
+                    </li>
+                </ul>
+                <div class="benefit__buttons benefit__buttons--mobile">
+                    <button class="benefit__button button" type="button">Купить</button>
+                    <button class="benefit__button button button--border" type="button">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="principle section">
+    <div class="container">
+        <div class="principle__wrapper">
+            <div class="principle__content">
+                <h2 class="principle__title title">
+                    <span class="title__accent">Принцип</span>
+                    действияна двигатель
+                </h2>
+                <div class="principle__text">
+                    <p>
+                        Добавка ТериумПро № 1 создана для остановки износа и восстановления трущихся поверхностей металлических деталей двигателя.
+                    </p>
+                    <p>
+                        Главная составляющая модификатора ТериумПро № 1 — смесь минералов группы серпентина, обработанная специальным образом.
+                    </p>
+                    <p>
+                        Наночастицы, попадая в зону трения, под воздействием давления и высоких температур образуют невидимый глазу прозрачный слой. Его микротвёрдость выше микротвёрдости поверхности металла, на котором он
+                        образован. Он обладает аномально низким коэффициентом трения и удерживает на себе масло.
+                    </p>
+                    <p>
+                        Является идеальным балансиром. Не меняет химический состав масла и его свойства. Сохраняется длительное время (100 000 — 200 000 км пробега).
+                    </p>
+                </div>
+            </div>
+            <div class="principle__bg" style="background-image: url('img/principle.png');" aria-hidden="true"> </div>
+        </div>
+    </div>
+</section>
+
+    <section class="instruction section">
+    <div class="container">
+        <div class="instruction__top">
+            <div class="instruction__headding">
+                <h2 class="instruction__title title">
+                    <span class="title__accent">инструкция </span>по применению
+                </h2>
+                <p class="instruction__subtext">
+                    Флакон расчитанна обработку двигателя с объемом масла до 5 литров. При большом объеме масла в системе используется дополнительный флакон на кждые 5 литров масла
+                </p>
+            </div>
+            <div class="instruction__recommendation">
+                <span class="instruction__subtitle">
+                    Рекомендация
+                </span>
+                <p class="instruction__text">
+                    Для достижения максимального эффекта рекомендуется обрабатывать исправный, имеющий не более 60% износа двигатель. Обработка проъодит в два этапа не более чем за 3000 км до
+                    замены масла и
+                    масленного
+                    фильтра
+                </p>
+            </div>
+        </div>
+        <ul class="instruction__items">
+            <li class="instruction__item">
+                <article class="instruction-card">
+    <div class="instruction-card__decor">
+        <span class="instruction-card__number">1</span>
+        <canvas class="instruction-card__triangle" aria-hidden="true" width="120" height="334"></canvas>
+        <canvas class="instruction-card__triangle instruction-card__triangle--mobile" aria-hidden="true" width="80" height="180"></canvas>
+    </div>
+    <div class="instruction-card__content">
+        <span class="instruction-card__bg" style="background-image: url('img/instruction/1.svg');" aria-hidden="true"> </span>
+        <h3 class="instruction-card__title">Прогреть двигатель</h3>
+        <div class="instruction-card__text"><p>Прогрейте двигатель до рабочей температуры</p></div>
+    </div>
+</article>
+            </li>
+            <li class="instruction__item">
+                <article class="instruction-card">
+    <div class="instruction-card__decor">
+        <span class="instruction-card__number">2</span>
+        <canvas class="instruction-card__triangle" aria-hidden="true" width="120" height="334"></canvas>
+        <canvas class="instruction-card__triangle instruction-card__triangle--mobile" aria-hidden="true" width="80" height="180"></canvas>
+    </div>
+    <div class="instruction-card__content">
+        <span class="instruction-card__bg" style="background-image: url('img/instruction/2.svg');" aria-hidden="true"> </span>
+        <h3 class="instruction-card__title">Заглушить двигатель</h3>
+        <div class="instruction-card__text"><p>Заглушите двигатель, для дальнейшего этапа</p></div>
+    </div>
+</article>
+            </li>
+            <li class="instruction__item">
+                <article class="instruction-card">
+    <div class="instruction-card__decor">
+        <span class="instruction-card__number">3</span>
+        <canvas class="instruction-card__triangle" aria-hidden="true" width="120" height="334"></canvas>
+        <canvas class="instruction-card__triangle instruction-card__triangle--mobile" aria-hidden="true" width="80" height="180"></canvas>
+    </div>
+    <div class="instruction-card__content">
+        <span class="instruction-card__bg" style="background-image: url('img/instruction/3.svg');" aria-hidden="true"> </span>
+        <h3 class="instruction-card__title">Подготовить флакон</h3>
+        <div class="instruction-card__text"><p>Тщательно встряхните флакон до распределения осадка по всему объему флакона</p></div>
+    </div>
+</article>
+            </li>
+            <li class="instruction__item">
+                <article class="instruction-card">
+    <div class="instruction-card__decor">
+        <span class="instruction-card__number">4</span>
+        <canvas class="instruction-card__triangle" aria-hidden="true" width="120" height="334"></canvas>
+        <canvas class="instruction-card__triangle instruction-card__triangle--mobile" aria-hidden="true" width="80" height="180"></canvas>
+    </div>
+    <div class="instruction-card__content">
+        <span class="instruction-card__bg" style="background-image: url('img/instruction/4.svg');" aria-hidden="true"> </span>
+        <h3 class="instruction-card__title">Залить половину флакона</h3>
+        <div class="instruction-card__text"><p>Залейте половину флакона в маслозаливную горловину двителя</p></div>
+    </div>
+</article>
+            </li>
+            <li class="instruction__item">
+                <article class="instruction-card">
+    <div class="instruction-card__decor">
+        <span class="instruction-card__number">5</span>
+        <canvas class="instruction-card__triangle" aria-hidden="true" width="120" height="334"></canvas>
+        <canvas class="instruction-card__triangle instruction-card__triangle--mobile" aria-hidden="true" width="80" height="180"></canvas>
+    </div>
+    <div class="instruction-card__content">
+        <span class="instruction-card__bg" style="background-image: url('img/instruction/5.svg');" aria-hidden="true"> </span>
+        <h3 class="instruction-card__title">Совершить поездку</h3>
+        <div class="instruction-card__text"><p>Совершите поездку в течение 30 минут в спокойном режиме, или на холостых оборотах 30-35 минут каждые 5 минут повышайте, удерживать и снижать обороты, имитируя поездку в течение двух минут</p></div>
+    </div>
+</article>
+            </li>
+            <li class="instruction__item">
+                <article class="instruction-card">
+    <div class="instruction-card__decor">
+        <span class="instruction-card__number">6</span>
+        <canvas class="instruction-card__triangle" aria-hidden="true" width="120" height="334"></canvas>
+        <canvas class="instruction-card__triangle instruction-card__triangle--mobile" aria-hidden="true" width="80" height="180"></canvas>
+    </div>
+    <div class="instruction-card__content">
+        <span class="instruction-card__bg" style="background-image: url('img/instruction/6.svg');" aria-hidden="true"> </span>
+        <h3 class="instruction-card__title">Следующее использование</h3>
+        <div class="instruction-card__text"><p>Оставшийся состав залейте примерно черпез 500 км пробега, но не менее чем за 3000 км доштатного ТО либо после замены масла и фильтра</p></div>
+    </div>
+</article>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="effect">
+    <div class="marquee">
+    <div class="marquee__wrapper">
+        <ul class="marquee__items">
+            <li class="marquee__item">Увеличение ресурса двигателя</li>
+            <li class="marquee__item">Экономия топлива</li>
+            <li class="marquee__item">Снижение вибрации и шума</li>
+            <li class="marquee__item">увеличение мощности двигателя</li>
+            <li class="marquee__item">Экономия Масла</li>
+            <li class="marquee__item">Сбалансированная работа двигателя</li>
+        </ul>
+    </div>
+</div>
+    <div class="effect__bg" style="background-image: url('img/effect-bg.jpg');">
+        <h2 class="title">
+            Эффект от применения добавки Териум <span class="title__accent">Про</span>
+        </h2>
+    </div>
+    <div class="effect__wrapper">
+        <div class="container">
+            <ul class="effect__inner">
+                <li class="effect__list">
+                    <article class="effect-card">
+    <h3 class="effect-card__title">На новом двигателе:</h3>
+    <ul class="effect-card__items"><li class="effect-card__item">Длительное время отсутствие износа вообще и доведение зазоров до идеального состояния</li><li class="effect-card__item">Улучшение показателей мощности и снижение расхода топлива и масла</li></ul>
+</article>
+                </li>
+                <li class="effect__list">
+                    <article class="effect-card">
+    <h3 class="effect-card__title">На автомобилях с пробегом:</h3>
+    <ul class="effect-card__items"><li class="effect-card__item">Остановка износа</li><li class="effect-card__item">Полное либо частичное (в зависимости от состояния) восстановление металлических деталей — цилиндра, колец, вкладышей, коленчатого вала</li></ul>
+</article>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</main>
+
+<section class="buy section">
+    <div class="buy__inner">
+        <div class="buy__container container">
+            <div class="buy__wrapper">
+                <div class="buy__content">
+                    <h2 class="title">
+                        Приобрести териум про
+                        <span class="title__accent">прямо сейчас</span>
+                    </h2>
+                    <p class="buy__subtext">
+                        Закажите ТЕРИУМПРО № 1 прямо сейчас по специальной цене и вступите в КЛУБ привилегий
+                    </p>
+                    <div class="buy__count">
+                        <span class="buy__price">1 299Р</span>
+                        <span class="buy__old">1 899Р</span>
+                    </div>
+                    <div class="buy__buttons">
+                        <a class="buy__button button" href="#">Купить</a>
+                        <a class="buy__button button button--border" href="#">О клубе</a>
+                    </div>
+                </div>
+                <div class="buy__images">
+                    <picture>
+                        <source srcset="img/product.avif" type="image/avif">
+                        <source srcset="img/product.webp" type="image/webp">
+                        <img class="buy__img" src="img/product.png" alt="Териум" width="550" height="645" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="consultation">
+    <div class="consultation__container container">
+        <div class="consultation__wrapper">
+            <div class="consultation__content">
+                <h2 class="consultation__title title">
+                    Получите <span class="title__accent">бесплатную</span> консультацию
+                </h2>
+                <span class="consultation__subtext">
+                    Заполните форму, чтобы узнать все подробности
+                </span>
+
+                <div class="consultation__caption consultation__caption--mobile">
+                    <div class="consultation__person">
+                        <div class="consultation__picture">
+                            <picture>
+                                <source srcset="img/consultation.avif" type="image/avif">
+                                <source srcset="img/consultation.webp" type="image/webp">
+                                <img class="consultation__img" src="img/consultation.jpg" alt="Игорь" width="91" height="91" loading="lazy">
+                            </picture>
+                        </div>
+                        <div>
+                            <span class="consultation__name">игорь</span>
+                            <span class="consultation__expert">Эксперт по продукции ТериумПро</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="consultation__form" action="#">
+
+                    <div class="consultation__item">
+                        <label class="sr-only" for="consultation-name">Введите ваше имя</label>
+                        <input class="consultation__field" name="name" type="text" placeholder="Имя" id="consultation-name" required>
+                    </div>
+                    <div class="consultation__item">
+                        <label class="sr-only" for="consultation-phone">Введите ваш номер телефона</label>
+                        <input class="consultation__field" name="phone" type="tel" placeholder="Номе телефона" id="consultation-phone" required>
+                    </div>
+
+                    <button class="consultation__button button button--normal" type="button" data-graph-path="modal-thank">Отправить заявку</button>
+                    <p class="consultation__agree">
+                        Нажимая на кнопку вы соглашаетесь с правилами использования <a class="consultation__link" href="#">публичной оферты</a>
+                    </p>
+                </form>
+            </div>
+            <div class="consultation__caption">
+                <div class="consultation__person">
+                    <div class="consultation__picture">
+                        <picture>
+                            <source srcset="img/consultation.avif" type="image/avif">
+                            <source srcset="img/consultation.webp" type="image/webp">
+                            <img class="consultation__img" src="img/consultation.jpg" alt="Игорь" width="91" height="91" loading="lazy">
+                        </picture>
+                    </div>
+                    <div>
+                        <span class="consultation__name">игорь</span>
+                        <span class="consultation__expert">Эксперт по продукции ТериумПро</span>
+                    </div>
+                </div>
+                <div class="consultation__text">
+                    <p>
+                        Заполните форму, чтобы узнать все подробности о ТЕРИУМПРО № 1.
+                    </p>
+                    <p>
+                        Игорь вам перезвонит в ближайшее время!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts section">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__content">
+                <h2 class="title">
+                    <span class="title__accent">
+                        Связаться
+                    </span> с нами
+                </h2>
+                <div class="contacts__text">
+                    <p>
+                        ТЕРИУМПРО № 1 — добавка в масло для защиты и восстановления бензиновых, дизельных, газовых двигателей (турбированных, атмосферных, форсированных) легковых, грузовых автомобилей, мототехники
+                    </p>
+                </div>
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--phone" href="tel:+70020000000">
+                            +7 (002-00) 0-00-00
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--email" href="mailto:hello@terium.pro">
+                            hello@terium.pro
+                        </a>
+                    </li>
+                </ul>
+                <span class="contacts__subtitle">
+                    Фактический адрес:
+                </span>
+                <p class="contacts__subtext">
+                    ООО РСТПРОМ, 162690, Вологодская обл., р. Череповецкий, п. Тоншаловское, д. Ясная Поляна, ул. Осенняя, д. 10.
+                </p>
+            </div>
+            <div class="contacts__images" style="background-image: url('img/contacts-bg.png');"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" style="background-image: url('img/footer-bg.jpg');">
+    <div class="footer__container container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__inner">
+                    <div class="footer__about">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="логотип" width="233" height="48" loading="lazy">
+                        </a>
+                        <ul class="footer__contacts">
+                            <li class="footer__contact">
+                                <a href="tel:+70020000000">+7 (002-00) 0-00-00</a>
+                            </li>
+                            <li class="footer__contact">
+                                <a href="mailto:Terium-pro@mail.ru">Terium-pro@mail.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="footer__navigation">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О продукте
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link footer__link--active" href="#">
+                                Экспертиза
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Клуб
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__buttons">
+                        <button class="footer__button button" type="button">
+                            Купить
+                        </button>
+                        <button class="footer__button button button--border" type="button">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+                <div class="footer__box">
+                    <p class="footer__address">
+                        ООО РСТПРОМ, 162690, Вологодская обл., р. Череповецкий, п. Тоншаловское, д. Ясная Поляна, ул. Осенняя, д. 10.
+                    </p>
+                    <div class="footer__user-nav user-nav">
+                        <form class="user-nav__search search" action="#" role="search">
+                            <label class="sr-only" for="search-header">Поиск</label>
+                            <div class="search__item">
+                                <input class="search__field" name="search" type="search" placeholder="Поиск..." id="search-header" required>
+                                <button class="search__button" type="submit">
+                                    <span class="sr-only">Найти</span>
+                                </button>
+                            </div>
+                        </form>
+                        <a class="user-nav__cart" href="#">
+                            <span class="sr-only">Корзина</span>
+                            <span class="user-nav__number">1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy">Copyright © 2023 TERIUM-PRO</span>
+                <ul class="footer__private">
+                    <li class="footer__info">
+                        <a href="#">Политика кофендециальности</a>
+                    </li>
+                    <li class="footer__info">
+                        <a href="#">Правила оплаты и возврата</a>
+                    </li>
+                    <li class="footer__info">
+                        <a href="#">Публичная оферта</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--  -->
+</div>
+</body>
+
+</html>

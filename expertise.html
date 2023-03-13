@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.js"></script>
+
+  <title>ТериумПро — Восстановление и защита вашего двигателя | Экспертиза</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+
+<!--  -->
+<header class="header">
+    <div class="container">
+        <nav class="header__navigation">
+            <a class="header__logo logo" href="#">
+                <img class="logo__img" src="img/logo.svg" alt="логотип" width="233" height="48" loading="lazy">
+            </a>
+            <div class="menu" data-menu>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">О продукте</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Экспертиза</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Клуб</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <div class="menu__user-nav user-nav">
+                    <form class="user-nav__search search" action="#" role="search">
+                        <label class="sr-only" for="search-header">Поиск</label>
+                        <div class="search__item">
+                            <input class="search__field" name="search" type="search" placeholder="Поиск..." id="search-header" required>
+                            <button class="search__button" type="submit">
+                                <span class="sr-only">Найти</span>
+                            </button>
+                        </div>
+                    </form>
+                    <a class="user-nav__cart" href="#">
+                        <span class="sr-only">Корзина</span>
+                        <span class="user-nav__number">1</span>
+                    </a>
+                </div>
+            </div>
+            <a class="header__buy button" href="#">Купить</a>
+            <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                <span class="burger__line"></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<button class="modal-thank" type="button" data-graph-path="modal-thank" style="display: none;">Открыть</button>
+<div class="graph-modal">
+   <div class="graph-modal__container graph-modal__container--thank" role="dialog" aria-modal="true" data-graph-target="modal-thank">
+       <div class="graph-modal__box">
+           <button class="graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+           <div class="graph-modal__content">
+                <div class="graph-modal__info">
+                    <span class="graph-modal__title title">
+                        <span class="title__accent">Спасибо</span>
+                        за вашу заявку
+                    </span>
+                    <p class="graph-modal__text">
+                        Игорь свяжется с вами в ближайшее время!
+                    </p>
+                </div>
+                <div class="graph-modal__bg" style="background-image: url('img/modal-bg.svg');"> </div>
+           </div>
+       </div>
+   </div>
+</div>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная > </a>
+            </li>
+
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current" aria-current="page"> экспертиза</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<main class="main">
+    <section class="expertise section">
+    <div class="container">
+        <div class="expertise__wrapper">
+            <div class="expertise__inner">
+                <h1 class="expertise__title title">
+                    Экспертиза <span class="title__accent">териум </span><span class="title__nonaccent">про</span>
+                </h1>
+                <picture>
+                   <source srcset="img/product.avif" type="image/avif">
+                   <source srcset="img/product.webp" type="image/webp">
+                   <img class="expertise__img" src="img/product.png" alt="Териум про" width="543" height="644" loading="lazy">
+                </picture>
+            </div>
+            <div class="expertise__content">
+                <div class="expertise__description">
+                    <span class="expertise__subtitle">Где проводилось испытание?</span>
+                    <div class="expertise__text">
+                        <p>
+                            Испытания состава проводились на базе федерального автономного государственного образовательного учреждения высшего профессионального образования «Санкт-Петербургский политехнический университет
+                            Петра Великого» (Институт энергетики, Высшая школа энергетического машиностроения)
+                        </p>
+                    </div>
+                </div>
+                <div class="expertise__result">
+                    <h2 class="title">
+                        <span class="title__accent">результаты </span> экспертизы
+                    </h2>
+                    <ul class="expertise__items number-list">
+                        <li class="number-list__item">
+                            <span class="number-list__number">01</span>
+                            Снижению уровня механических потерь, особенно заметному в зоне низких и средних частот вращения коленчатого вала (до 2000 об/мин)
+                        </li>
+                        <li class="number-list__item">
+                            <span class="number-list__number">01</span>
+                            Снижение удельного расхода топлива, в большей степени выраженное в зоне малых оборотов
+                        </li>
+                        <li class="number-list__item">
+                            <span class="number-list__number">02</span>
+                            Увеличение мощности двигателя во всем диапазоне эксплутационных характеристик.
+                        </li>
+                        <li class="number-list__item">
+                            <span class="number-list__number">03</span>
+                            Рост давления масла в системе смазывания и снижение токсичности отработавших газов
+                        </li>
+                        <li class="number-list__item">
+                            <span class="number-list__number">04</span>
+                            Повышение качества уплотнения цилиндро- поршневой группы двигателя и выравнивание компрессии по цилиндрам.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <picture>
+                <source srcset="img/product.avif" type="image/avif">
+                <source srcset="img/product.webp" type="image/webp">
+                <img class="expertise__img expertise__img--mobile" src="img/product.png" alt="Териум про" width="543" height="644" loading="lazy">
+            </picture>
+        </div>
+    </div>
+</section>
+
+    <section class="expertise-table section">
+    <div class="container">
+        <div class="expertise-table__top">
+            <h2 class="expertise-table__title title">
+                <span class="title__accent">Проведение обработки </span>
+                двигателя препаратом — Териум
+                <span class="title__nonaccent">Про</span>
+            </h2>
+            <p class="expertise-table__text">
+                Усредненные эффекты обработки двигателя препаратом «Териум Про No1», полученные по окончании испытаний, сведены в таблицу ниже:
+            </p>
+        </div>
+
+        <div class="expertise-table__wrapper">
+        <table class="expertise-table__table">
+            <tbody class="expertise-table__content">
+                <tr class="expertise-table__items expertise-table__items--headding">
+                    <th class="expertise-table__item expertise-table__item--first">Стадия испытания</th>
+                    <th class="expertise-table__item">Мощность <span class="expertise-table__small">кВт при n=300 об/мин</span></th>
+                    <th class="expertise-table__item">Расход топлива <span class="expertise-table__small">кг/кВтч</span></th>
+                    <th class="expertise-table__item">Эффект КПД</th>
+                    <th class="expertise-table__item">Механ. КПД</th>
+                    <th class="expertise-table__item">CO, %</th>
+                    <th class="expertise-table__item">CH, ppm</th>
+                    <th class="expertise-table__item">NOx, ppm</th>
+                </tr>
+                <tr class="expertise-table__items">
+                    <th class="expertise-table__item expertise-table__item--first">Начало испытаний</th>
+                    <th class="expertise-table__item">39,8</th>
+                    <th class="expertise-table__item">39,8</th>
+                    <th class="expertise-table__item">39,8</th>
+                    <th class="expertise-table__item">39,8</th>
+                    <th class="expertise-table__item">39,8</th>
+                    <th class="expertise-table__item">39,8</th>
+                    <th class="expertise-table__item">39,8</th>
+                </tr>
+                <tr class="expertise-table__items expertise-table__items--bg">
+                    <th class="expertise-table__item expertise-table__item--first" rowspan="2">
+                        После первой обработки / изменение по отношению к началу испытаний
+                    </th>
+                    <th class="expertise-table__item">40,6</th>
+                    <th class="expertise-table__item">0,370</th>
+                    <th class="expertise-table__item">0,233</th>
+                    <th class="expertise-table__item">0,717</th>
+                    <th class="expertise-table__item">1,97</th>
+                    <th class="expertise-table__item">127</th>
+                    <th class="expertise-table__item">2303</th>
+                </tr>
+                <tr class="expertise-table__items expertise-table__items--bg">
+                    <th class="expertise-table__item">+2,0</th>
+                    <th class="expertise-table__item">-3,1</th>
+                    <th class="expertise-table__item">+3,6</th>
+                    <th class="expertise-table__item">+1,6</th>
+                    <th class="expertise-table__item">-5,7</th>
+                    <th class="expertise-table__item">-4,5</th>
+                    <th class="expertise-table__item">+1,7</th>
+                </tr>
+                <tr class="expertise-table__items">
+                    <th class="expertise-table__item expertise-table__item--first" rowspan="2">
+                        После второй обработки/изменение по отношению к началу испытания
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        41,3
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        0,361
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        0,238
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        0,723
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        1,88
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        177
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        2347
+                    </th>
+                </tr>
+                <tr class="expertise-table__items">
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        +3,8
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        -5,5
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        +5,8
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        +2,4
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        -10,0
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        -12,0
+                    </th>
+                    <th class="expertise-table__item expertise-table__item--accent">
+                        +2,4
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+        <div class="expertise-table__bottom">
+            <h3 class="expertise-table__subtitle title">
+                <span class="title__accent">
+                    Узнать больше
+                </span>об экспертизе
+            </h3>
+            <ul class="expertise-table__documents">
+                <li class="expertise-table__more expertise-table__more--download">
+                    <span class="expertise-table__document">
+                        Протокол испытаний ТериумПро
+                    </span>
+                    <a class="expertise-table__link" href="#" download="#">скачать</a>
+                </li>
+                <li class="expertise-table__more expertise-table__more--read">
+                    <span class="expertise-table__document">
+                        Протокол испытаний ТериумПро
+                    </span>
+                    <a class="expertise-table__link" href="#">читать онлайн</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</main>
+
+<section class="consultation">
+    <div class="consultation__container container">
+        <div class="consultation__wrapper">
+            <div class="consultation__content">
+                <h2 class="consultation__title title">
+                    Получите <span class="title__accent">бесплатную</span> консультацию
+                </h2>
+                <span class="consultation__subtext">
+                    Заполните форму, чтобы узнать все подробности
+                </span>
+
+                <div class="consultation__caption consultation__caption--mobile">
+                    <div class="consultation__person">
+                        <div class="consultation__picture">
+                            <picture>
+                                <source srcset="img/consultation.avif" type="image/avif">
+                                <source srcset="img/consultation.webp" type="image/webp">
+                                <img class="consultation__img" src="img/consultation.jpg" alt="Игорь" width="91" height="91" loading="lazy">
+                            </picture>
+                        </div>
+                        <div>
+                            <span class="consultation__name">игорь</span>
+                            <span class="consultation__expert">Эксперт по продукции ТериумПро</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="consultation__form" action="#">
+
+                    <div class="consultation__item">
+                        <label class="sr-only" for="consultation-name">Введите ваше имя</label>
+                        <input class="consultation__field" name="name" type="text" placeholder="Имя" id="consultation-name" required>
+                    </div>
+                    <div class="consultation__item">
+                        <label class="sr-only" for="consultation-phone">Введите ваш номер телефона</label>
+                        <input class="consultation__field" name="phone" type="tel" placeholder="Номе телефона" id="consultation-phone" required>
+                    </div>
+
+                    <button class="consultation__button button button--normal" type="button" data-graph-path="modal-thank">Отправить заявку</button>
+                    <p class="consultation__agree">
+                        Нажимая на кнопку вы соглашаетесь с правилами использования <a class="consultation__link" href="#">публичной оферты</a>
+                    </p>
+                </form>
+            </div>
+            <div class="consultation__caption">
+                <div class="consultation__person">
+                    <div class="consultation__picture">
+                        <picture>
+                            <source srcset="img/consultation.avif" type="image/avif">
+                            <source srcset="img/consultation.webp" type="image/webp">
+                            <img class="consultation__img" src="img/consultation.jpg" alt="Игорь" width="91" height="91" loading="lazy">
+                        </picture>
+                    </div>
+                    <div>
+                        <span class="consultation__name">игорь</span>
+                        <span class="consultation__expert">Эксперт по продукции ТериумПро</span>
+                    </div>
+                </div>
+                <div class="consultation__text">
+                    <p>
+                        Заполните форму, чтобы узнать все подробности о ТЕРИУМПРО № 1.
+                    </p>
+                    <p>
+                        Игорь вам перезвонит в ближайшее время!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts section">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__content">
+                <h2 class="title">
+                    <span class="title__accent">
+                        Связаться
+                    </span> с нами
+                </h2>
+                <div class="contacts__text">
+                    <p>
+                        ТЕРИУМПРО № 1 — добавка в масло для защиты и восстановления бензиновых, дизельных, газовых двигателей (турбированных, атмосферных, форсированных) легковых, грузовых автомобилей, мототехники
+                    </p>
+                </div>
+                <ul class="contacts__items">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--phone" href="tel:+70020000000">
+                            +7 (002-00) 0-00-00
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--email" href="mailto:hello@terium.pro">
+                            hello@terium.pro
+                        </a>
+                    </li>
+                </ul>
+                <span class="contacts__subtitle">
+                    Фактический адрес:
+                </span>
+                <p class="contacts__subtext">
+                    ООО РСТПРОМ, 162690, Вологодская обл., р. Череповецкий, п. Тоншаловское, д. Ясная Поляна, ул. Осенняя, д. 10.
+                </p>
+            </div>
+            <div class="contacts__images" style="background-image: url('img/contacts-bg.png');"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" style="background-image: url('img/footer-bg.jpg');">
+    <div class="footer__container container">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__inner">
+                    <div class="footer__about">
+                        <a class="footer__logo logo" href="#">
+                            <img class="logo__img" src="img/logo.svg" alt="логотип" width="233" height="48" loading="lazy">
+                        </a>
+                        <ul class="footer__contacts">
+                            <li class="footer__contact">
+                                <a href="tel:+70020000000">+7 (002-00) 0-00-00</a>
+                            </li>
+                            <li class="footer__contact">
+                                <a href="mailto:Terium-pro@mail.ru">Terium-pro@mail.ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="footer__navigation">
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                О продукте
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link footer__link--active" href="#">
+                                Экспертиза
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Клуб
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__buttons">
+                        <button class="footer__button button" type="button">
+                            Купить
+                        </button>
+                        <button class="footer__button button button--border" type="button">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+                <div class="footer__box">
+                    <p class="footer__address">
+                        ООО РСТПРОМ, 162690, Вологодская обл., р. Череповецкий, п. Тоншаловское, д. Ясная Поляна, ул. Осенняя, д. 10.
+                    </p>
+                    <div class="footer__user-nav user-nav">
+                        <form class="user-nav__search search" action="#" role="search">
+                            <label class="sr-only" for="search-header">Поиск</label>
+                            <div class="search__item">
+                                <input class="search__field" name="search" type="search" placeholder="Поиск..." id="search-header" required>
+                                <button class="search__button" type="submit">
+                                    <span class="sr-only">Найти</span>
+                                </button>
+                            </div>
+                        </form>
+                        <a class="user-nav__cart" href="#">
+                            <span class="sr-only">Корзина</span>
+                            <span class="user-nav__number">1</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copy">Copyright © 2023 TERIUM-PRO</span>
+                <ul class="footer__private">
+                    <li class="footer__info">
+                        <a href="#">Политика кофендециальности</a>
+                    </li>
+                    <li class="footer__info">
+                        <a href="#">Правила оплаты и возврата</a>
+                    </li>
+                    <li class="footer__info">
+                        <a href="#">Публичная оферта</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--  -->
+</div>
+</body>
+
+</html>
