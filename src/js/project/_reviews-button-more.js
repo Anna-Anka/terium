@@ -9,10 +9,10 @@ export const reviewsButtonMore = () => {
             let textContentCopy = textContent
             const textLength = text.innerHTML.length
             
-            if (textLength > 300) {
+            if (textLength > 250) {
                 
                 button.classList.add('review-card__more--show');
-                const newText = textContent.slice(0, 301)
+                const newText = textContent.slice(0, 251)
                 text.innerHTML = newText + '...'
                 console.log(textContentCopy)
 

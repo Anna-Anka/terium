@@ -76,6 +76,8 @@
 	}
 
 	.number-list {
+        align-items: flex-start;
+        
 		&__item {
 			&:not(:last-child) {
 				@include adaptiv-value('margin-bottom', 32, 15, 1);
