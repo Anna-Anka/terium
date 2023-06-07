@@ -6,38 +6,50 @@
 	bottom: 0;
 	left: 0;
 	z-index: 1000;
-	display: flex;
 	overflow-x: hidden;
 	overflow-y: auto;
-	vertical-align: middle;
+	text-align: center;
 	background-color: rgba($black, 0.8);
 	visibility: hidden;
 	cursor: pointer;
 	opacity: 0;
 	transition: opacity var(--transition-time), visibility var(--transition-time);
 
+	&::before {
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+		content: '';
+	}
+
 	&__container {
-		display: flex;
-		align-items: center;
-		align-self: center;
+		position: relative;
+		display: inline-block;
+		display: none;
 		width: 100%;
 		max-width: 1360px;
-		margin: 0 auto;
+		margin: 50px auto;
 		padding: 20px 10px;
+		text-align: left;
+		vertical-align: middle;
 		cursor: default;
+
+		@media (max-width: 1360px) {
+			width: 90%;
+		}
 	}
 
 	&__box {
 		position: relative;
 		width: 100%;
 		max-width: 1360px;
-		padding: 40px 60px;
+		padding: 15px 60px;
 		overflow-y: hidden;
 		background-color: $white;
 		@include flex-center-sb;
 
 		@include mq(lg) {
-			padding: 40px 30px;
+			padding: 15px 30px;
 		}
 
 		@include mq(sm) {
@@ -104,32 +116,35 @@
 			top: 35px;
 		}
 	}
-
-	&.is-open {
-		visibility: visible;
-		opacity: 1;
-		transition: opacity var(--transition-time),
-			visibility var(--transition-time);
-	}
 }
 
+.graph-modal.is-open {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+}
+.graph-modal__container.graph-modal-open {
+	display: inline-block;
+}
 .fade {
-	transition: opacity var(--transition-time);
-
-	&.animate-open {
-		width: 100%;
-		max-width: 1360px;
-	}
+	opacity: 0;
 }
-
+.fade,
+.fade.animate-open {
+	transition: opacity var(--transition-time);
+}
+.fade.animate-open {
+	opacity: 1;
+}
 .fadeInUp {
 	transform: translateY(-100px);
 	opacity: 0;
+}
+.fadeInUp,
+.fadeInUp.animate-open {
 	transition: transform var(--transition-time), opacity var(--transition-time);
-
-	&.animate-open {
-		transform: translateY(0);
-		opacity: 1;
-		transition: transform var(--transition-time), opacity var(--transition-time);
-	}
+}
+.fadeInUp.animate-open {
+	transform: translateY(0);
+	opacity: 1;
 }

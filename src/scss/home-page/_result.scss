@@ -44,7 +44,8 @@
 		gap: 12px;
 
 		@include mq(md) {
-            margin-bottom: 20px;
+			grid-template-columns: 1fr;
+			margin-bottom: 20px;
 		}
 	}
 }

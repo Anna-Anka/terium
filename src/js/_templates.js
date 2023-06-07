@@ -22,7 +22,7 @@ if (document.querySelector('.modal-thank')) {
         const modal = new GraphModal('modal').open('modal-thank');
     });
 
-    //btnThank.click();
+    // btnThank.click();
 }
 
 // * Подключение inputmask
