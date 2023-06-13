@@ -111,7 +111,7 @@
                 </h2>
                 <div class="benefit__buttons">
                     <a class="benefit__button button" href="order.html">Купить</a>
-                    <a class="benefit__button button button--border" href="product.html">Подробнее</a>
+                    <!-- <a class="benefit__button button button--border" href="product.html">Подробнее</a> -->
                 </div>
                 <div class="benefit__bg" style="background-image: url('img/buy-decor.png');"> </div>
             </div>
@@ -148,38 +148,83 @@
                 </ul>
                 <div class="benefit__buttons benefit__buttons--mobile">
                     <button class="benefit__button button" type="button">Купить</button>
-                    <button class="benefit__button button button--border" type="button">Подробнее</button>
+                    <!-- <button class="benefit__button button button--border" type="button">Подробнее</button> -->
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-    <section class="principle section">
+    <section class="product-article">
+    <h2 class="sr-only">Подробное описание товара</h2>
     <div class="container">
-        <div class="principle__wrapper">
-            <div class="principle__content">
-                <h2 class="principle__title title">
-                    <span class="title__accent">Принцип</span>
-                    действияна двигатель
-                </h2>
-                <div class="principle__text">
-                    <p>
-                        Добавка ТериумПро № 1 создана для остановки износа и восстановления трущихся поверхностей металлических деталей двигателя.
-                    </p>
-                    <p>
-                        Главная составляющая модификатора ТериумПро № 1 — смесь минералов группы серпентина, обработанная специальным образом.
-                    </p>
-                    <p>
-                        Наночастицы, попадая в зону трения, под воздействием давления и высоких температур образуют невидимый глазу прозрачный слой. Его микротвёрдость выше микротвёрдости поверхности металла, на котором он
-                        образован. Он обладает аномально низким коэффициентом трения и удерживает на себе масло.
-                    </p>
-                    <p>
-                        Является идеальным балансиром. Не меняет химический состав масла и его свойства. Сохраняется длительное время (100 000 — 200 000 км пробега).
-                    </p>
-                </div>
+        <div class="product-article__item product-article__item--center">
+            <div class="product-article__content">
+                <h3 class="title">
+                    назначение
+                </h3>
+                <p>
+                    Добавка ТериумПро № 1 создана для многократного увеличения ресурса, надежности металлических
+                    деталей и узлов двигателя.
+                </p>
+                <p>
+                    В результате Применения ТериумПро № 1 происходит полное или частичное (в зависимости от
+                    степени износа) восстановление поверхности металлических деталей двигателя: цилиндров,
+                    колец, шатунных пальцев, вкладышей, частично гидрокомпенсаторов, подшипников турбины.
+                    Оптимизируются зазоры.
+                </p>
             </div>
-            <div class="principle__bg" style="background-image: url('img/principle.png');" aria-hidden="true"> </div>
+            <div class="product-article__bg product-article__bg--shadow" style="background-image: url('img/product-article/engine.png');" aria-hidden="true"> </div>
+        </div>
+
+        <div class="product-article__item">
+            <div class="product-article__content">
+                <h3 class="title">
+                    состав
+                </h3>
+                <p>
+                    Главная составляющая модификатора ТериумПро № 1 — обогащённая смесь минералов группы серпентина, обработанная специальным образом (ноу хау)
+                </p>
+            </div>
+        </div>
+
+        <div class="product-article__item product-article__item--center">
+            <div class="product-article__content">
+                <h3 class="title">
+                    принцип действия
+                </h3>
+                <p>
+                    Частицы ТериумПро № 1, попадая в зону трения, под воздействием высокой температуры и давления
+                    формируют ультрагладкую зеркальную поверхность с аномально низким коэффициентом трения 0,005
+                    (супермаслянистую). Микротвёрдость новой поверхности выше микротвёрдости поверхности
+                    металла, на которой она образована. Благодаря системе микроканалов удерживает на себе
+                    масляную плёнку. Сохраняется длительное время (от 100 000 до 300 000 км пробега в
+                    зависимости от состояния двигателя). ТериумПро № 1 не влияет на химический состав масла и не
+                    изменяет его свойств.
+                </p>
+            </div>
+            <div class="product-article__images">
+                <figure class="product-article__image">
+                    <picture>
+                        <source srcset="img/product-article/surface_before.avif" type="image/avif">
+                        <source srcset="img/product-article/surface_before.webp" type="image/webp">
+                        <img class="product-article__img" src="img/product-article/surface_before.jpg" alt="до обработки" width="340" height="240" loading="lazy">
+                    </picture>
+                    <figcaption>Поверхность цилиндра до обработки ТериумПроN1</figcaption>
+                </figure>
+                <figure class="product-article__image">
+                    <picture>
+                        <source srcset="img/product-article/surface_after.avif" type="image/avif">
+                        <source srcset="img/product-article/surface_after.webp" type="image/webp">
+                        <img class="product-article__img" src="img/product-article/surface_after.jpg" alt="после обработки" width="340" height="240" loading="lazy">
+                    </picture>
+                    <figcaption>Поверхность цилиндра после обработки ТериумПроN1</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="product-article__item">
+            <div class="product-article__bg product-article__bg--one" style="background-image: url('img/product-article/last.jpg');" aria-hidden="true"> </div>
         </div>
     </div>
 </section>
